@@ -1,6 +1,6 @@
 body {
   background-color: #000;
-  color: #FFF;
+  color: #CCC;
   left: 10%;
   line-height: 1.8;
   position: relative;
@@ -28,4 +28,10 @@ a:hover {
 
 a:active {
   border-color: #F00;
+}
+
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
