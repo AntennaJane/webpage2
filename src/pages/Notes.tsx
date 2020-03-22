@@ -1,13 +1,19 @@
 import React from 'react';
 import {Link, useRouteMatch} from "react-router-dom";
 
-function Notes() {
-  const {url} = useRouteMatch();
+interface Props {
+  setTitle: SetTitle,
+}
+
+function Notes(props: Props) {
+  if (useRouteMatch("/~Solferino/notes")?.isExact) {
+    props.setTitle("利用上の諸注意");
+  }
 
   return (
     <div className="Notes">
       <h1>利用上の諸注意</h1>
-      <p>『<Link to={`${url}/..`}>AntennaJane実況本部</Link>』の利用に関する注意書き。</p>
+      <p>『<Link to={"/~Solferino"}>AntennaJane実況本部</Link>』の利用に関する注意書き。</p>
       <h2>警告</h2>
       <p>本サイトのご利用によって、あなたにいかなるトラブルが発生しても当方は一切責任をおいません。ご利用は自己責任において行って下さい。</p>
       <h2>注意</h2>
