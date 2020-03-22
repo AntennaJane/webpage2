@@ -1,18 +1,26 @@
 import React from 'react';
 import {Link, useRouteMatch} from "react-router-dom";
 
+const current = "/~Solferino";
+
 interface Props {
-  setTitle: SetTitle,
+  setPages: SetPages,
 }
 
-function Front(props: Props) {
-  if (useRouteMatch("/~Solferino")?.isExact) {
-    props.setTitle(null);
+export function BuildPages(): Page[] {
+  return [{title: "AntennaJane 実況本部", path: current}];
+}
+
+export function Render(props: Props) {
+  const [rendered, setRendered] = React.useState(false);
+
+  if (useRouteMatch(current)?.isExact && !rendered) {
+    setRendered(true);
+    props.setPages(BuildPages());
   }
 
   return (
     <div className="Front">
-      <h1>AntennaJane 実況本部</h1>
       <ul>
         <li>AntennaJane ホームページ(ゲーム実況・書き物など)</li>
         <li>旧名：微笑を浮かべる椅子</li>
@@ -30,5 +38,3 @@ function Front(props: Props) {
     </div>
   );
 }
-
-export default Front;

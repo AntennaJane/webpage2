@@ -1,2 +1,7 @@
 /// <reference types="react-scripts" />
-type SetTitle = React.Dispatch<React.SetStateAction<string | null>>
+interface Page {
+  path: string,
+  title: string,
+}
+
+type SetPages = React.Dispatch<React.SetStateAction<Page[]>>

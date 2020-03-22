@@ -1,18 +1,27 @@
 import React from 'react';
 import {Link, useRouteMatch} from "react-router-dom";
+import * as Front from "./Front";
+
+const current = "/~Solferino/notes";
 
 interface Props {
-  setTitle: SetTitle,
+  setPages: SetPages,
 }
 
-function Notes(props: Props) {
-  if (useRouteMatch("/~Solferino/notes")?.isExact) {
-    props.setTitle("利用上の諸注意");
+export function BuildPages(): Page[] {
+  return Front.BuildPages().concat({title: "利用上の諸注意", path: current});
+}
+
+export function Render(props: Props) {
+  const [rendered, setRendered] = React.useState(false);
+
+  if (useRouteMatch(current)?.isExact && !rendered) {
+    setRendered(true);
+    props.setPages(BuildPages());
   }
 
   return (
     <div className="Notes">
-      <h1>利用上の諸注意</h1>
       <p>『<Link to={"/~Solferino"}>AntennaJane実況本部</Link>』の利用に関する注意書き。</p>
       <h2>警告</h2>
       <p>本サイトのご利用によって、あなたにいかなるトラブルが発生しても当方は一切責任をおいません。ご利用は自己責任において行って下さい。</p>
@@ -54,5 +63,3 @@ function Notes(props: Props) {
     </div>
   );
 }
-
-export default Notes;
