@@ -33,7 +33,7 @@ export function Render(props: Props) {
       <h2>通知</h2>
       <p>本サイトへのリンクは、このページ（https://magenta.link/~Solferino/）にすることを推奨します。</p>
       <h2>入口</h2>
-      <p><a href="menu.html">目次</a> - ここからお入りください。</p>
+      <p><Link to={"/~Solferino/menu"}>目次</Link> - ここからお入りください。</p>
       <address>AntennaJane 2009-07-17 作成 2020-03-20 更新</address>
     </div>
   );

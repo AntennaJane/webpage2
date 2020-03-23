@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, Route, Switch} from "react-router-dom";
 import * as Front from "./Front";
+import * as Menu from "./Menu";
 import * as Notes from "./Notes";
 
 function Index() {
@@ -21,6 +22,9 @@ function Index() {
       <Switch>
         <Route exact path={"/~Solferino"}>
           <Front.Render setPage={setPage}/>
+        </Route>
+        <Route path={"/~Solferino/menu"}>
+          <Menu.Render setPage={setPage}/>
         </Route>
         <Route path={"/~Solferino/notes"}>
           <Notes.Render setPage={setPage}/>

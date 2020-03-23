@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, useRouteMatch} from "react-router-dom";
-import * as Front from "./Front";
+import * as Menu from "./Menu";
 
 const current = "/~Solferino/notes";
 
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export function BuildPage(): Page {
-  return {title: "利用上の諸注意", path: current, parent: Front.BuildPage()};
+  return {title: "利用上の諸注意", path: current, parent: Menu.BuildPage()};
 }
 
 export function Render(props: Props) {

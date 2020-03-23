@@ -36,6 +36,10 @@ ul, ol, dl {
   list-style: none;
 }
 
+.AA {
+  font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', RobotoJAA, Monapo, 'IPA モナー Pゴシック', IPAMonaPGothic, Mona, '梅Pゴシック', Textar, sans-serif;
+}
+
 .Breadcrumbs li {
   display: inline-block;
 }
@@ -43,4 +47,21 @@ ul, ol, dl {
 .Breadcrumbs li.parent::after {
   content: ' > ';
   margin-right: 0.5em;
+}
+
+.dlTable {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+.dlTable dt {
+  margin-right: 1em;
+}
+
+.dlTable dd {
+  margin: 0;
+}
+
+.group > li {
+  margin-bottom: 1em;
 }
