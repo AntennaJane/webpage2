@@ -16,6 +16,7 @@ function Index() {
 
   return (
     <div className="Index">
+      <Breadcrumbs pages={pages}/>
       <h1>{title}</h1>
       <Switch>
         <Route exact path={"/~Solferino"}>
@@ -30,3 +31,17 @@ function Index() {
 }
 
 export default Index;
+
+function Breadcrumbs(props: { pages: Page[] }) {
+  let list: React.ReactElement<HTMLLIElement>[] = [];
+
+  props.pages.forEach(page => {
+    list.push(<li>{page.title}</li>)
+  });
+
+  return (
+    <div className="Breadcrumbs">
+      <ul>{list}</ul>
+    </div>
+  )
+}
