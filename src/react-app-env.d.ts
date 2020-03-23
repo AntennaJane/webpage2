@@ -1,7 +1,8 @@
 /// <reference types="react-scripts" />
 interface Page {
+  parent?: Page
   path: string,
   title: string,
 }
 
-type SetPages = React.Dispatch<React.SetStateAction<Page[]>>
+type SetPage = React.Dispatch<React.SetStateAction<Page>>

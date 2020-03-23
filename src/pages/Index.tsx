@@ -1,29 +1,29 @@
 import React from 'react';
-import {Route, Switch} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
 import * as Front from "./Front";
 import * as Notes from "./Notes";
 
 function Index() {
-  const [pages, setPages] = React.useState<Page[]>([{title: "未設定", path: "未設定"}]);
+  const [page, setPage] = React.useState<Page>({title: "未設定", path: "未設定"});
   const [title, setTitle] = React.useState("読込中");
 
   React.useEffect(() => {
-    const lastTitle = pages[pages.length - 1].title;
-    const firstTitle = pages[0].title;
+    const lastTitle = page.title;
+    const firstTitle = getFirstTitle(page);
     document.title = (lastTitle !== firstTitle ? (lastTitle + "/") : "") + firstTitle;
     setTitle(lastTitle);
-  }, [pages]);
+  }, [page]);
 
   return (
     <div className="Index">
-      <Breadcrumbs pages={pages}/>
+      <Breadcrumbs page={page}/>
       <h1>{title}</h1>
       <Switch>
         <Route exact path={"/~Solferino"}>
-          <Front.Render setPages={setPages}/>
+          <Front.Render setPage={setPage}/>
         </Route>
         <Route path={"/~Solferino/notes"}>
-          <Notes.Render setPages={setPages}/>
+          <Notes.Render setPage={setPage}/>
         </Route>
       </Switch>
     </div>
@@ -32,16 +32,21 @@ function Index() {
 
 export default Index;
 
-function Breadcrumbs(props: { pages: Page[] }) {
-  let list: React.ReactElement<HTMLLIElement>[] = [];
+function getFirstTitle(page: Page): string {
+  return page.parent == null ? page.title : getFirstTitle(page.parent);
+}
 
-  props.pages.forEach(page => {
-    list.push(<li>{page.title}</li>)
-  });
-
+function Breadcrumbs(props: { page: Page }) {
   return (
     <div className="Breadcrumbs">
-      <ul>{list}</ul>
+      <ul>{createBreadcrumbs(props.page, true)}</ul>
     </div>
   )
+}
+
+function createBreadcrumbs(page: Page, last: boolean = false): React.ReactElement<HTMLLIElement>[] {
+  const parent = page.parent == null ? [] : createBreadcrumbs(page.parent);
+  const title = last ? page.title : <Link to={page.path}>{page.title}</Link>;
+  const className = last ? '' : 'parent';
+  return parent.concat(<li className={className}>{title}</li>);
 }

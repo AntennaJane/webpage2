@@ -4,11 +4,11 @@ import {Link, useRouteMatch} from "react-router-dom";
 const current = "/~Solferino";
 
 interface Props {
-  setPages: SetPages,
+  setPage: SetPage,
 }
 
-export function BuildPages(): Page[] {
-  return [{title: "AntennaJane 実況本部", path: current}];
+export function BuildPage(): Page {
+  return {title: "AntennaJane 実況本部", path: current};
 }
 
 export function Render(props: Props) {
@@ -16,7 +16,7 @@ export function Render(props: Props) {
 
   if (useRouteMatch(current)?.isExact && !rendered) {
     setRendered(true);
-    props.setPages(BuildPages());
+    props.setPage(BuildPage());
   }
 
   return (

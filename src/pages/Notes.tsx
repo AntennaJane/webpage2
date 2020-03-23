@@ -5,11 +5,11 @@ import * as Front from "./Front";
 const current = "/~Solferino/notes";
 
 interface Props {
-  setPages: SetPages,
+  setPage: SetPage,
 }
 
-export function BuildPages(): Page[] {
-  return Front.BuildPages().concat({title: "利用上の諸注意", path: current});
+export function BuildPage(): Page {
+  return {title: "利用上の諸注意", path: current, parent: Front.BuildPage()};
 }
 
 export function Render(props: Props) {
@@ -17,7 +17,7 @@ export function Render(props: Props) {
 
   if (useRouteMatch(current)?.isExact && !rendered) {
     setRendered(true);
-    props.setPages(BuildPages());
+    props.setPage(BuildPage());
   }
 
   return (
