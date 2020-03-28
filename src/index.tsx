@@ -5,6 +5,7 @@ import './styles/index.css';
 import App from './pages/App';
 import Index from './pages/Index';
 import * as serviceWorker from './serviceWorker';
+import App404 from "./pages/App404";
 
 ReactDOM.render((
   <BrowserRouter>
@@ -14,6 +15,9 @@ ReactDOM.render((
       </Route>
       <Route path="/~Solferino">
         <Index/>
+      </Route>
+      <Route>
+        <App404/>
       </Route>
     </Switch>
   </BrowserRouter>

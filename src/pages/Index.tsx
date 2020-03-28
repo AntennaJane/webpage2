@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, Route, Switch} from "react-router-dom";
 import * as Front from "./Front";
+import * as Index404 from "./Index404";
 import * as Menu from "./Menu";
 import * as Notes from "./Notes";
 
@@ -28,6 +29,9 @@ function Index() {
         </Route>
         <Route path={"/~Solferino/notes"}>
           <Notes.Render setPage={setPage}/>
+        </Route>
+        <Route>
+          <Index404.Render setPage={setPage}/>
         </Route>
       </Switch>
     </div>
