@@ -4,6 +4,7 @@ import * as Front from "./Front";
 import * as Index404 from "./Index404";
 import * as Menu from "./Menu";
 import * as Notes from "./Notes";
+import * as Broadcasts from "./Broadcasts/Index";
 
 function Index() {
   const [page, setPage] = React.useState<Page>({title: "未設定", path: "未設定"});
@@ -24,6 +25,9 @@ function Index() {
         <Route exact path={"/~Solferino"}>
           <Front.Render setPage={setPage}/>
         </Route>
+        <Route path={"/~Solferino/broadcasts"}>
+          <Broadcasts.Render setPage={setPage}/>
+        </Route>
         <Route path={"/~Solferino/menu"}>
           <Menu.Render setPage={setPage}/>
         </Route>
@@ -31,7 +35,7 @@ function Index() {
           <Notes.Render setPage={setPage}/>
         </Route>
         <Route>
-          <Index404.Render setPage={setPage}/>
+          <Index404.Render page={Front.BuildPage()} setPage={setPage}/>
         </Route>
       </Switch>
     </div>

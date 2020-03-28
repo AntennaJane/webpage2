@@ -1,14 +1,14 @@
 import React from 'react';
-import * as Front from "./Front";
 
 const current = "/~Solferino";
 
 interface Props {
+  page: Page,
   setPage: SetPage,
 }
 
-export function BuildPage(): Page {
-  return {title: "404 Not Found", path: current, parent: Front.BuildPage()};
+export function BuildPage(page: Page): Page {
+  return {title: "404 Not Found", path: current, parent: page};
 }
 
 export function Render(props: Props) {
@@ -16,7 +16,7 @@ export function Render(props: Props) {
 
   if (!rendered) {
     setRendered(true);
-    props.setPage(BuildPage());
+    props.setPage(BuildPage(props.page));
   }
 
   return (
