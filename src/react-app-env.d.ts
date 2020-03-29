@@ -6,3 +6,7 @@ interface Page {
 }
 
 type SetPage = React.Dispatch<React.SetStateAction<Page>>
+
+interface SolferinoProps {
+  setPage: SetPage,
+}

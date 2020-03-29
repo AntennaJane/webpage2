@@ -4,15 +4,11 @@ import * as Front from "./Front";
 
 const current = "/~Solferino/menu";
 
-interface Props {
-  setPage: SetPage,
-}
-
 export function BuildPage(): Page {
   return {title: "目次", path: current, parent: Front.BuildPage()};
 }
 
-export function Render(props: Props) {
+export function Render(props: SolferinoProps) {
   const [rendered, setRendered] = React.useState(false);
 
   if (useRouteMatch(current)?.isExact && !rendered) {

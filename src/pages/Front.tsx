@@ -3,15 +3,11 @@ import {Link, useRouteMatch} from "react-router-dom";
 
 const current = "/~Solferino";
 
-interface Props {
-  setPage: SetPage,
-}
-
 export function BuildPage(): Page {
   return {title: "AntennaJane 実況本部", path: current};
 }
 
-export function Render(props: Props) {
+export function Render(props: SolferinoProps) {
   const [rendered, setRendered] = React.useState(false);
 
   if (useRouteMatch(current)?.isExact && !rendered) {

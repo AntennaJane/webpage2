@@ -6,15 +6,11 @@ import * as Stage from "./Stage";
 
 const current = "/~Solferino/broadcasts";
 
-interface Props {
-  setPage: SetPage,
-}
-
 export function BuildPage(): Page {
   return {title: "実況履歴", path: current, parent: Menu.BuildPage()};
 }
 
-export function Render(props: Props) {
+export function Render(props: SolferinoProps) {
   const [rendered, setRendered] = React.useState(false);
 
   if (useRouteMatch(current)?.isExact && !rendered) {

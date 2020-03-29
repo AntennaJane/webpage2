@@ -4,15 +4,11 @@ import * as Menu from "./Menu";
 
 const current = "/~Solferino/notes";
 
-interface Props {
-  setPage: SetPage,
-}
-
 export function BuildPage(): Page {
   return {title: "利用上の諸注意", path: current, parent: Menu.BuildPage()};
 }
 
-export function Render(props: Props) {
+export function Render(props: SolferinoProps) {
   const [rendered, setRendered] = React.useState(false);
 
   if (useRouteMatch(current)?.isExact && !rendered) {
