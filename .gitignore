@@ -24,3 +24,4 @@ yarn-error.log*
 
 # addition
 .idea
+parameters.json

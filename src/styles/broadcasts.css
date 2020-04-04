@@ -1,0 +1,37 @@
+.Broadcasts .item {
+  margin-bottom: 0.4em;
+  padding: 0.4em;
+  border-color: #006688;
+  border-width: 0.4em;
+  border-style: double;
+}
+
+.Broadcasts .item li li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.Broadcasts .thumb {
+  float: left;
+  margin-right: 1em;
+}
+
+.Broadcasts .thumb img {
+  width: 8em;
+}
+
+.Broadcasts .information {
+  color: #ff69b4;
+}
+
+.Broadcasts .place {
+  color: #00bfff;
+}
+
+.Broadcasts .name {
+  color: #adff2f
+}
+
+.Broadcasts .log {
+  color: #c0c0c0
+}
