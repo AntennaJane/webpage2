@@ -25,7 +25,7 @@ export function Render(props: SolferinoProps) {
         <Route exact path={"/~Solferino/broadcasts"}>
           <p>現在テスト中</p>
         </Route>
-        <Route exact path={"/~Solferino/broadcasts/:stage"}>
+        <Route exact path={"/~Solferino/broadcasts/stage/:stage"}>
           <Stage.Render {...props}/>
         </Route>
         <Route>

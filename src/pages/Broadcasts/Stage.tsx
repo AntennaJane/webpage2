@@ -3,7 +3,7 @@ import {useAsync} from "react-async";
 import {useParams, useRouteMatch} from "react-router-dom";
 import * as Index from "./Index";
 
-const current = "/~Solferino/broadcasts/:stage";
+const current = "/~Solferino/broadcasts/stage/:stage";
 
 export function BuildPage(stage: string): Page {
   return {title: stage + "期", path: current, parent: Index.BuildPage()};
