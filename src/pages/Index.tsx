@@ -75,12 +75,5 @@ function createBreadcrumbs(page: Page, last: boolean = false): React.ReactElemen
 }
 
 async function loadParameters() {
-  try {
-    return require("../data/parameters.json")
-  } catch (e) {
-    if (e.code !== "MODULE_NOT_FOUND") {
-      throw e;
-    }
-  }
-  return require("../data/parameters-dist.json");
+  return require("../data/parameters.json");
 }
