@@ -1,4 +1,12 @@
 /// <reference types="react-scripts" />
+interface BroadcastsStage {
+  "name": string
+}
+
+interface BroadcastsStages {
+  [number: string]: BroadcastsStage
+}
+
 interface BroadcastsNumber {
   "stage": string,
   "series": string,

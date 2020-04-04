@@ -5,11 +5,12 @@ import * as Index from "./Index";
 
 const current = "/~Solferino/broadcasts/stage/:stage";
 
-export function BuildPage(stage: string): Page {
-  return {title: stage + "期", path: current, parent: Index.BuildPage()};
+export function BuildPage(stage: string, name: string | undefined = undefined): Page {
+  return {title: stage + "期" + (name != null ? ' ' + name : ''), path: current, parent: Index.BuildPage()};
 }
 
 export function Render(props: SolferinoProps) {
+  const [loaded, setLoaded] = React.useState(false);
   const [rendered, setRendered] = React.useState(false);
 
   let {stage} = useParams();
@@ -25,7 +26,16 @@ export function Render(props: SolferinoProps) {
   const {data, error, isPending} = useAsync(loadData);
   if (isPending) return <div>読込中...</div>;
   if (error) return <div>読込に失敗しました</div>;
-  if (data) return render(data, props, stage);
+  if (data) {
+    if (rendered && !loaded) {
+      setLoaded(true);
+      // @ts-ignore
+      const stages = data.stages as BroadcastsStages;
+      props.setPage(BuildPage(stage, stages[stage]?.name));
+    }
+
+    return render(data, props, stage);
+  }
   return null;
 }
 
@@ -103,9 +113,9 @@ function renderItems(data: unknown, props: SolferinoProps, stage: string) {
 
 async function loadData() {
   const numbers = require("../../data/broadcasts-numbers.json");
-  return {numbers: numbers};
+  const stages = require("../../data/broadcasts-stages.json");
+  return {numbers: numbers, stages: stages};
 }
-
 
 function getSeriesNumber(numbers: BroadcastsNumbers, series: string, number: string) {
   let result = 0;
