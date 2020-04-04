@@ -27,7 +27,7 @@ export function Render(props: SolferinoProps) {
             <dd><span className="AA">σ(ﾟ∀ﾟ)</span></dd>
             <dt>最新情報</dt>
             <dd><span className="AA">（･∀･)つ⑩</span></dd>
-            <dt>実況履歴</dt>
+            <dt><Link to={"/~Solferino/broadcasts"}>実況履歴</Link></dt>
             <dd><span className="AA">(∩ﾟдﾟ)</span></dd>
             <dt>雑記廃物</dt>
             <dd><span className="AA">φ（．．） (´ー`)ノ⌒◇</span></dd>
