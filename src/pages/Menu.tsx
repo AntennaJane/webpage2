@@ -52,7 +52,8 @@ export function Render(props: SolferinoProps) {
         <li>
           <ul>
             <li><a href="https://twitter.com/AntennaJane">情報twitter支部</a></li>
-            <li><a href="https://magenta.click/@AntennaJane">情報Mastodon支部</a></li>
+            <li><a href="https://pawoo.net/@AntennaJane">情報Pawoo支部</a></li>
+            <li><a href="https://misskey.io/@AntennaJane">情報Misskey支部</a></li>
             <li><a href="http://tokioritsukutameiki.blog65.fc2.com">情報FC2支部</a></li>
           </ul>
         </li>
@@ -63,7 +64,7 @@ export function Render(props: SolferinoProps) {
           </ul>
         </li>
       </ul>
-      <address>AntennaJane 2005-01-06 作成 2020-03-23 更新</address>
+      <address>AntennaJane 2005-01-06 作成 2023-03-01 更新</address>
     </div>
   );
 }
