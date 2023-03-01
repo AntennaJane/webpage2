@@ -1,0 +1,19 @@
+Name:webpage2-YYYY-MM-DD-n
+Machine type:N1->g1-small
+Allow HTTP traffic:ON
+Allow HTTPS traffic:ON
+
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt install -y nodejs
+sudo npm install n -g
+sudo n stable
+sudo apt purge -y nodejs npm
+git clone git@github.com:AntennaJane/webpage2.git
+cd webpage2
+cp src/data/parameters-dist.json src/data/parameters.json
+sudo npm install
+sudo npm run build --max-old-space-size=1500
+sudo apt -y install certbot
+sudo certbot certonly --standalone -d magenta.link
+        antennajane@gmail.com
+cd ..
