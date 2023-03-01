@@ -8,6 +8,16 @@ sudo apt install -y nodejs
 sudo npm install n -g
 sudo n stable
 sudo apt purge -y nodejs npm
+sudo apt install git
+cd ~/.ssh
+ssh-keygen -t ed25519 -C "nagare_yatsu@yahoo.co.jp"
+        (empty)
+        (empty)
+        (empty)
+chmod 400 !!!keyname!!!
+cd ..
+chmod 755 .ssh
+!!!register github public key -> (SSH keys -> Authentication Key)!!!
 git clone git@github.com:AntennaJane/webpage2.git
 cd webpage2
 cp src/data/parameters-dist.json src/data/parameters.json
