@@ -11,10 +11,13 @@ export function BuildPage(): Page {
 export function Render(props: SolferinoProps) {
   const [rendered, setRendered] = React.useState(false);
 
-  if (useRouteMatch(current)?.isExact && !rendered) {
-    setRendered(true);
-    props.setPage(BuildPage());
-  }
+  const isExact = useRouteMatch(current)?.isExact;
+  React.useEffect(() => {
+    if (isExact && !rendered) {
+      setRendered(true);
+      props.setPage(BuildPage());
+    }
+  }, [isExact, rendered, props]);
 
   return (
     <div className="Front">
@@ -23,7 +26,7 @@ export function Render(props: SolferinoProps) {
       <ul className="group">
         <li>
           <dl className="dlTable">
-            <dt>自己紹介</dt>
+            <dt><Link to={"/~Solferino/profile"}>自己紹介</Link></dt>
             <dd><span className="AA">σ(ﾟ∀ﾟ)</span></dd>
             <dt>最新情報</dt>
             <dd><span className="AA">（･∀･)つ⑩</span></dd>
