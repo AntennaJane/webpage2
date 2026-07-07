@@ -40,6 +40,10 @@ ul, ol, dl {
   font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', RobotoJAA, Monapo, 'IPA モナー Pゴシック', IPAMonaPGothic, Mona, '梅Pゴシック', Textar, sans-serif;
 }
 
+.Breadcrumbs {
+  margin: 1.5em 0 1em;
+}
+
 .Breadcrumbs li {
   display: inline-block;
 }
@@ -64,4 +68,9 @@ ul, ol, dl {
 
 .group > li {
   margin-bottom: 1em;
+}
+
+address {
+  display: block;
+  margin-top: 2em;
 }
