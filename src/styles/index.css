@@ -62,21 +62,6 @@ ul, ol, dl {
   margin: 0;
 }
 
-.definitionList dt {
-  color: #FFF;
-  margin-top: 0.8em;
-}
-
-.definitionList dd {
-  margin: 0 0 0 1em;
-}
-
-.restoreNote {
-  border-left: solid 0.25em #666;
-  color: #AAA;
-  padding-left: 1em;
-}
-
 .group > li {
   margin-bottom: 1em;
 }

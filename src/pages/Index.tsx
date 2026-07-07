@@ -5,7 +5,6 @@ import * as Front from "./Front";
 import * as Index404 from "./Index404";
 import * as Menu from "./Menu";
 import * as Notes from "./Notes";
-import * as Profile from "./Profile";
 import * as Broadcasts from "./Broadcasts/Index";
 
 function Index() {
@@ -42,9 +41,6 @@ function render(data: unknown, page: Page, setPage: SetPage, title: string) {
         </Route>
         <Route path={"/~Solferino/menu"}>
           <Menu.Render {...argument}/>
-        </Route>
-        <Route path={"/~Solferino/profile"}>
-          <Profile.Render {...argument}/>
         </Route>
         <Route path={"/~Solferino/notes"}>
           <Notes.Render {...argument}/>
