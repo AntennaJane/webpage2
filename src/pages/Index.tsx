@@ -5,6 +5,7 @@ import * as Front from "./Front";
 import * as Index404 from "./Index404";
 import * as Menu from "./Menu";
 import * as Notes from "./Notes";
+import * as Profile from "./Profile";
 import * as Broadcasts from "./Broadcasts/Index";
 
 function Index() {
@@ -45,6 +46,9 @@ function render(data: unknown, page: Page, setPage: SetPage, title: string) {
         <Route path={"/~Solferino/notes"}>
           <Notes.Render {...argument}/>
         </Route>
+        <Route path={"/~Solferino/profile"}>
+          <Profile.Render {...argument}/>
+        </Route>
         <Route>
           <Index404.Render {...argument} page={Front.BuildPage()}/>
         </Route>
@@ -71,7 +75,7 @@ function createBreadcrumbs(page: Page, last: boolean = false): React.ReactElemen
   const parent = page.parent == null ? [] : createBreadcrumbs(page.parent);
   const title = last ? page.title : <Link to={page.path}>{page.title}</Link>;
   const className = last ? '' : 'parent';
-  return parent.concat(<li className={className}>{title}</li>);
+  return parent.concat(<li key={page.path} className={className}>{title}</li>);
 }
 
 async function loadParameters() {
