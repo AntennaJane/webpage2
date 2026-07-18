@@ -1,0 +1,10 @@
+.Board-Thread dt {
+    margin-top: 1em;
+}
+
+.Board-Thread dd {
+    margin-left: 1em;
+    /* AA 保持のため空白を維持し、旧掲示板同様のフォントで表示する */
+    white-space: pre-wrap;
+    font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', RobotoJAA, Monapo, 'IPA モナー Pゴシック', IPAMonaPGothic, Mona, '梅Pゴシック', Textar, sans-serif;
+}

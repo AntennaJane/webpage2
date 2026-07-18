@@ -22,6 +22,30 @@ interface BroadcastsNumbers {
   [number: string]: BroadcastsNumber
 }
 
+interface BoardPost {
+  "no": number,
+  "name": string,
+  "mail": string,
+  "date": string,
+  "lines": string[]
+}
+
+interface BoardThread {
+  "board": string,
+  "key": string,
+  "title": string,
+  "posts": BoardPost[]
+}
+
+interface BoardArchive {
+  "boards": {
+    "id": string,
+    "name": string,
+    "note": string
+  }[],
+  "threads": BoardThread[]
+}
+
 interface Page {
   parent?: Page
   path: string,

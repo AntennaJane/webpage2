@@ -49,6 +49,7 @@ function RenderContents() {
     <div>
       <h2>実況期 一覧</h2>
       {Stages.render(data)}
+      <address>AntennaJane 2020-03-28 作成 2020-04-04 更新</address>
     </div>
   );
   return null;

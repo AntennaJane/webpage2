@@ -46,6 +46,85 @@ test('renders toho-mistake page', async () => {
   expect(image).toHaveAttribute("href", "/writing/toho_mistake/Kaeiduka.png");
 });
 
+test('links board from menu', async () => {
+  const {findByText} = render(<MemoryRouter initialEntries={["/~Solferino/menu"]}><Index/></MemoryRouter>);
+  const link = (await findByText("掲示板等")).closest("a");
+  expect(link).toHaveAttribute("href", "/~Solferino/board");
+});
+
+test('renders board index page', async () => {
+  const {findByText, findAllByText} = render(<MemoryRouter initialEntries={["/~Solferino/board"]}><Index/></MemoryRouter>);
+  expect((await findByText("掲示板等", {selector: "h1"}))).toBeInTheDocument();
+  const threads = await findAllByText("実況総合");
+  expect(threads.length).toBe(2);
+  expect(threads[0].closest("a")).toHaveAttribute("href", "/~Solferino/board/bbs18c/1266112580");
+});
+
+test('renders board thread page', async () => {
+  const {findByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/board/bbs18c/1266112580"]}><Index/></MemoryRouter>);
+  expect((await findByText("実況総合", {selector: "h1"}))).toBeInTheDocument();
+  expect(await findByText("実況中はこのスレもチェックしてるよ")).toBeInTheDocument();
+});
+
+// 全コンテンツページの共通規約: 作成日時 (・更新日時) を address 要素で表記する。
+// 新ページを追加したらこの routes に載せること (載せ忘れ防止は下の網羅テストが担う)。
+const contentRoutes = [
+  "/~Solferino",
+  "/~Solferino/menu",
+  "/~Solferino/notes",
+  "/~Solferino/profile",
+  "/~Solferino/writing",
+  "/~Solferino/writing/toho-mistake",
+  "/~Solferino/writing/excavation",
+  "/~Solferino/board",
+  "/~Solferino/board/bbs18c/1266112524",
+  "/~Solferino/board/mtbbs2/1232607975",
+  "/~Solferino/broadcasts",
+  "/~Solferino/broadcasts/stage",
+  "/~Solferino/broadcasts/stage/1",
+];
+
+test('every content page shows creation date', async () => {
+  for (const route of contentRoutes) {
+    const {findByText, unmount} = render(<MemoryRouter initialEntries={[route]}><Index/></MemoryRouter>);
+    const address = await findByText(/作成/, {selector: "address"});
+    expect(address).toBeInTheDocument();
+    unmount();
+  }
+});
+
+test('content routes cover every registered page path', () => {
+  // ソース中の <Route exact path={"..."}> を全ページから洗い出し、contentRoutes が
+  // それぞれに具体値でマッチすることを検証する。新ページのルートを追加して
+  // contentRoutes へ載せ忘れると、このテストが失敗して作成日時チェック漏れを防ぐ。
+  const fs = require('fs');
+  const path = require('path');
+  const files: string[] = [];
+  const walk = (d: string) => fs.readdirSync(d, {withFileTypes: true}).forEach((e: {name: string, isDirectory: () => boolean}) => {
+    const p = path.join(d, e.name);
+    if (e.isDirectory()) walk(p);
+    else if (p.endsWith(".tsx") && !p.endsWith(".test.tsx")) files.push(p);
+  });
+  walk(__dirname);
+  const pattern = /<Route exact path={"([^"]+)"}>/g;
+  const registered: string[] = [];
+  for (const f of files) {
+    const src = fs.readFileSync(f, "utf-8");
+    let m = pattern.exec(src);
+    while (m != null) {
+      registered.push(m[1]);
+      m = pattern.exec(src);
+    }
+  }
+  expect(registered.length).toBeGreaterThan(0);
+  for (const route of registered) {
+    const regex = new RegExp("^" + route.replace(/:[^/]+/g, "[^/]+") + "$");
+    const covered = contentRoutes.some((c) => regex.test(c));
+    expect({route, covered}).toEqual({route, covered: true});
+  }
+});
+
 test('renders excavation page', async () => {
   const {findByText} = render(<MemoryRouter initialEntries={["/~Solferino/writing/excavation"]}><Index/></MemoryRouter>);
   expect((await findByText("Webリソース発掘法", {selector: "h1"}))).toBeInTheDocument();

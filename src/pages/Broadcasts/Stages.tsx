@@ -20,7 +20,12 @@ export function Render(props: SolferinoProps) {
   const {data, error, isPending} = useAsync(loadData);
   if (isPending) return <div>読込中...</div>;
   if (error) return <div>読込に失敗しました</div>;
-  if (data) return render(data);
+  if (data) return (
+    <div>
+      {render(data)}
+      <address>AntennaJane 2020-04-04 作成</address>
+    </div>
+  );
   return null;
 }
 
