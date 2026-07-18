@@ -32,7 +32,7 @@ export function Render(props: SolferinoProps) {
             <dd><span className="AA">（･∀･)つ⑩</span></dd>
             <dt><Link to={"/~Solferino/broadcasts"}>実況履歴</Link></dt>
             <dd><span className="AA">(∩ﾟдﾟ)</span></dd>
-            <dt>雑記廃物</dt>
+            <dt><Link to={"/~Solferino/writing"}>雑記廃物</Link></dt>
             <dd><span className="AA">φ（．．） (´ー`)ノ⌒◇</span></dd>
             <dt>掲示板等</dt>
             <dd><span className="AA">（・∀・）人（・∀・）</span></dd>

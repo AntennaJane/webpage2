@@ -1,0 +1,90 @@
+/* 勘違いしやすい東方Project (旧 writing/toho_mistake/index.html の style 再現) */
+.Writing-TohoMistake dt {
+    margin-right: 1em;
+    display: inline;
+}
+
+.Writing-TohoMistake dd {
+    margin-right: 1em;
+    display: inline;
+}
+
+.Writing-TohoMistake h3 + dl {
+    margin-top: 0em;
+}
+
+.Writing-TohoMistake dl + p {
+    margin-top: -1em;
+}
+
+.Writing-TohoMistake .one {
+    color: #00f;
+}
+
+.Writing-TohoMistake .two {
+    color: #0ff;
+}
+
+.Writing-TohoMistake .three {
+    color: #0f0;
+}
+
+.Writing-TohoMistake .four {
+    color: #ff0;
+}
+
+.Writing-TohoMistake .five {
+    color: #f00;
+}
+
+.Writing-TohoMistake .visible {
+    font-size: 1.5em;
+}
+
+.Writing-TohoMistake h3 + .visible {
+    margin-top: 0em;
+}
+
+.Writing-TohoMistake q {
+    display: none;
+}
+
+.Writing-TohoMistake del {
+    display: none;
+}
+
+/* Webリソース発掘法 (旧 writing/excavation.html の style 再現) */
+.Writing-Excavation .hur {
+    color: #f00;
+}
+
+.Writing-Excavation .exam {
+    background: #400;
+}
+
+.Writing-Excavation .sup {
+    background: #333;
+}
+
+.Writing-Excavation a.dfd {
+    display: inline;
+    color: inherit;
+}
+
+.Writing-Excavation a.lnk {
+    display: inline;
+}
+
+.Writing-Excavation .ndl dt {
+    position: relative;
+    margin-top: 1em;
+}
+
+.Writing-Excavation .ndl dd {
+    position: relative;
+    left: 1em;
+}
+
+.Writing-Excavation .ndl .dfn {
+    border-bottom: dashed 0.1em #66c;
+}
