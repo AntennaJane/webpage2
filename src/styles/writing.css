@@ -13,8 +13,10 @@
     margin-top: 0em;
 }
 
+/* 旧ページは -1em で p のデフォルト margin を相殺していたが、
+   dl の margin が 0 のため正味 -1em となり重なる。0 で密着させる。 */
 .Writing-TohoMistake dl + p {
-    margin-top: -1em;
+    margin-top: 0;
 }
 
 .Writing-TohoMistake .one {
