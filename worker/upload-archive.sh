@@ -2,21 +2,44 @@
 # R2 バケット webpage2-archive へアーカイブデータを一括アップロードする。
 # 使い方: bash upload-archive.sh <ステージングのルート>
 #   例:   bash upload-archive.sh /home/remote-ai/projects/webpage2/r2-stage
-# ステージング内の相対パスがそのままオブジェクトキーになる
-# (broadcasts/logs/xxx.json → /broadcasts/logs/xxx.json で配信)。
-set -euo pipefail
+# - 一時エラーは 3 回までリトライ
+# - 完了キーは upload-archive.done に記録し、再実行時はスキップ (途中再開可能)
+set -uo pipefail
 
 SRC=${1:?usage: bash upload-archive.sh <staging-root>}
-cd "$(dirname "$0")"
+# 完了記録は実行時のカレントディレクトリに置く (書込可能な場所で実行すること)
+DONE="$PWD/upload-archive.done"
+touch "$DONE"
 
-find "$SRC" -type f | while read -r f; do
+total=$(find "$SRC" -type f | wc -l)
+find "$SRC" -type f | sort | while read -r f; do
   key=${f#"$SRC"/}
+  grep -qxF "$key" "$DONE" && continue
   case "$key" in
     *.json) ct="application/json" ;;
     *.png)  ct="image/png" ;;
     *.jpg|*.jpeg) ct="image/jpeg" ;;
     *)      ct="application/octet-stream" ;;
   esac
-  npx wrangler r2 object put "webpage2-archive/$key" --file "$f" --content-type "$ct" --remote
+  ok=0
+  for attempt in 1 2 3; do
+    if npx wrangler r2 object put "webpage2-archive/$key" --file "$f" --content-type "$ct" --remote; then
+      ok=1
+      break
+    fi
+    echo "リトライ ($attempt/3 失敗): $key" >&2
+    sleep 3
+  done
+  if [ "$ok" = 1 ]; then
+    echo "$key" >> "$DONE"
+  else
+    echo "断念: $key (再実行で続きから再開できます)" >&2
+  fi
 done
-echo "アップロード完了: $(find "$SRC" -type f | wc -l) files"
+
+done_n=$(wc -l < "$DONE")
+echo "完了 $done_n / $total"
+if [ "$done_n" -ne "$total" ]; then
+  echo "未完了分があります。同じコマンドを再実行してください。" >&2
+  exit 1
+fi
