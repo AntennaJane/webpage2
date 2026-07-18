@@ -12,3 +12,8 @@ routes = [
 binding = "DB"
 database_name = "webpage2-access"
 database_id = "7babc882-c423-4915-bbf6-3fb7e869824c"
+
+# アーカイブ配信 (スレログ、将来はサムネイルも): 大容量静的データは repo に入れず R2 へ
+[[r2_buckets]]
+binding = "ARCHIVE"
+bucket_name = "webpage2-archive"

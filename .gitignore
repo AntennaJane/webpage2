@@ -25,3 +25,6 @@ yarn-error.log*
 # addition
 .idea
 parameters.json
+
+# R2 配信用ステージング (repo 非同梱、アップロードは worker/upload-archive.sh)
+/r2-stage
