@@ -49,7 +49,7 @@ export function Render(props: SolferinoProps) {
 }
 
 function render(data: unknown, props: SolferinoProps, stage: string) {
-  const pathThumb = props.parameters.storage.path + "/~Solferino/broadcasts/thumb/";
+  const pathThumb = props.parameters.storage.path + "/broadcasts/thumb/";
 
   return (
     <div className="Broadcasts-Stage">
@@ -83,7 +83,7 @@ function render(data: unknown, props: SolferinoProps, stage: string) {
 }
 
 function renderItems(data: unknown, props: SolferinoProps, stage: string) {
-  const pathThumb = props.parameters.storage.path + "/~Solferino/broadcasts/thumb/";
+  const pathThumb = props.parameters.storage.path + "/broadcasts/thumb/";
 
   // @ts-ignore
   const numbers = data.numbers as BroadcastsNumbers;
