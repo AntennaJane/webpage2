@@ -1,11 +1,11 @@
 import React from 'react';
-import {Link, useRouteMatch} from "react-router-dom";
-import * as Index from "./Index";
+import {useRouteMatch} from "react-router-dom";
+import * as Menu from "./Menu";
 
-const current = "/~Solferino/spot-info/history";
+const current = "/~Solferino/history";
 
 export function BuildPage(): Page {
-  return {title: "更新履歴", path: current, parent: Index.BuildPage()};
+  return {title: "更新履歴", path: current, parent: Menu.BuildPage()};
 }
 
 export function Render(props: SolferinoProps) {
@@ -17,11 +17,11 @@ export function Render(props: SolferinoProps) {
     }
   }, [isExact, setPage]);
 
-  const data = require("../../data/site-updates.json") as {updates: SiteUpdate[]};
+  const data = require("../data/site-updates.json") as {updates: SiteUpdate[]};
   const updates = data.updates.slice().reverse();
 
   return (
-    <div className="SpotInfo-History">
+    <div className="History">
       <p>本サイトの更新告知の記録です。2014 年以前の項目は旧 RSS 配信の内容を収録しています。</p>
       <dl>
         {updates.map((u, i) => (
@@ -31,7 +31,6 @@ export function Render(props: SolferinoProps) {
           </React.Fragment>
         ))}
       </dl>
-      <p><Link to={"/~Solferino/spot-info"}>戻る</Link></p>
       <address>AntennaJane　2026-07-18 作成</address>
     </div>
   );

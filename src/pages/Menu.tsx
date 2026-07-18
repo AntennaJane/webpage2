@@ -28,7 +28,7 @@ export function Render(props: SolferinoProps) {
           <dl className="dlTable">
             <dt><Link to={"/~Solferino/profile"}>自己紹介</Link></dt>
             <dd><span className="AA">σ(ﾟ∀ﾟ)</span></dd>
-            <dt><Link to={"/~Solferino/spot-info"}>最新情報</Link></dt>
+            <dt><Link to={"/~Solferino/history"}>更新履歴</Link></dt>
             <dd><span className="AA">（･∀･)つ⑩</span></dd>
             <dt><Link to={"/~Solferino/broadcasts"}>実況履歴</Link></dt>
             <dd><span className="AA">(∩ﾟдﾟ)</span></dd>

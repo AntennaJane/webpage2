@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link, useRouteMatch} from "react-router-dom";
-import * as Index from "./Index";
+import * as SpotInfo from "./SpotInfo";
 
-const current = "/~Solferino/spot-info/log";
+const current = "/~Solferino/broadcasts/spot-info/log";
 
 export function BuildPage(): Page {
-  return {title: "旧発言テーブルログ", path: current, parent: Index.BuildPage()};
+  return {title: "旧発言テーブルログ", path: current, parent: SpotInfo.BuildPage()};
 }
 
 const log: [string, React.ReactNode][] = [
@@ -81,7 +81,7 @@ export function Render(props: SolferinoProps) {
           </React.Fragment>
         ))}
       </dl>
-      <p><Link to={"/~Solferino/spot-info"}>戻る</Link></p>
+      <p><Link to={"/~Solferino/broadcasts/spot-info"}>戻る</Link></p>
       <address>AntennaJane　2010-05-26 作成　随時更新</address>
     </div>
   );
