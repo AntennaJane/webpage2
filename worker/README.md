@@ -38,7 +38,18 @@ curl -s https://magenta.link/~Solferino/api/access-stats
 
 ## 更新デプロイ
 
-`worker/src/index.js` 変更後に `npx wrangler deploy` のみ。
+**Git 連携 (Workers Builds) 設定済みの場合は master への merge で自動デプロイされる**
+(Pages と同じ運用に統一。手動での `npx wrangler deploy` は緊急時のフォールバック)。
+
+Git 連携の設定 (ダッシュボード、初回のみ):
+
+1. Workers & Pages → `webpage2-access-stats` → 設定 → ビルド → リポジトリを接続
+2. リポジトリ: `AntennaJane/webpage2` / ブランチ: `master`
+3. ルートディレクトリ: `/worker` (wrangler.toml がここにある)
+4. ビルドコマンド: 空欄 (ビルド不要の素の JS)。デプロイコマンドは既定の
+   `npx wrangler deploy` のまま
+5. ビルド監視パス (build watch paths) を `worker/*` にすると、サイトのみの
+   merge では Worker デプロイが走らず無駄がない
 
 ## 費用
 
