@@ -11,5 +11,4 @@ routes = [
 [[d1_databases]]
 binding = "DB"
 database_name = "webpage2-access"
-# `wrangler d1 create webpage2-access` の出力の database_id をここに転記する
-database_id = "PLACEHOLDER_DATABASE_ID"
+database_id = "7babc882-c423-4915-bbf6-3fb7e869824c"
