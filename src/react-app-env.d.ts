@@ -46,6 +46,19 @@ interface BoardArchive {
   "threads": BoardThread[]
 }
 
+interface BroadcastsRecord {
+  "threads": {
+    "key": string,
+    "label": string
+  }[],
+  "video": string | null,
+  "videoNote": string | null
+}
+
+interface BroadcastsRecords {
+  [number: string]: BroadcastsRecord
+}
+
 interface SiteUpdate {
   "date": string,
   "title": string,

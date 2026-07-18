@@ -87,6 +87,24 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    // アーカイブ (スレログ等の大容量静的データ) は R2 から配信する
+    if (url.pathname.startsWith("/broadcasts/logs/") && url.pathname.endsWith(".json")) {
+      try {
+        const object = await env.ARCHIVE.get(url.pathname.slice(1));
+        if (object == null) {
+          return new Response("not found", {status: 404});
+        }
+        return new Response(object.body, {
+          headers: {
+            "content-type": "application/json; charset=utf-8",
+            "cache-control": "public, max-age=86400",
+          },
+        });
+      } catch (e) {
+        return new Response("unavailable", {status: 503});
+      }
+    }
+
     if (url.pathname === "/~Solferino/api/access-stats") {
       try {
         const body = JSON.stringify(await stats(env));

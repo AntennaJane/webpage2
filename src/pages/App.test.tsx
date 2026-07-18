@@ -88,6 +88,7 @@ const contentRoutes = [
   "/~Solferino/broadcasts",
   "/~Solferino/broadcasts/stage",
   "/~Solferino/broadcasts/stage/1",
+  "/~Solferino/broadcasts/log/1265953806",
 ];
 
 test('every content page shows creation date', async () => {
@@ -138,6 +139,35 @@ test('restores parent title when returning via breadcrumbs', async () => {
   expect((await findByText("旧発言テーブルログ", {selector: "h1"}))).toBeInTheDocument();
   fireEvent.click(await findByText("旧最新情報", {selector: ".Breadcrumbs a"}));
   expect((await findByText("旧最新情報", {selector: "h1"}))).toBeInTheDocument();
+});
+
+test('links broadcast logs from stage record column', async () => {
+  const {findByText, findAllByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
+  const threads = await findAllByText("なんでも実況フリーダム(1)");
+  expect(threads[0].closest("a")).toHaveAttribute("href", "/~Solferino/broadcasts/log/1266842598");
+  // 旧ページに記録が無い最新期の回は (準備中) のまま
+  const {findAllByText: findStage13} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/13"]}><Index/></MemoryRouter>);
+  expect((await findStage13("(準備中)")).length).toBeGreaterThan(0);
+});
+
+test('renders record video links with liveness', async () => {
+  const {findAllByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
+  const videos = await findAllByText("動画 (YouTube)", {exact: true, selector: "a"});
+  expect(videos[0]).toHaveAttribute("href", "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C");
+  const {findByText: findStage9} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/9"]}><Index/></MemoryRouter>);
+  expect(await findStage9("動画 (YouTube・削除済み)", {exact: false})).toBeInTheDocument();
+});
+
+test('broadcast log breadcrumbs include stage context', async () => {
+  const {findByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/log/1266858664"]}><Index/></MemoryRouter>);
+  expect((await findByText("第95回 なんでも実況フリーダム(2)", {selector: "h1"}))).toBeInTheDocument();
+  const stageLink = (await findByText("10期 ノクターン時代", {selector: ".Breadcrumbs a"}));
+  expect(stageLink.closest("a")).toHaveAttribute("href", "/~Solferino/broadcasts/stage/10");
 });
 
 test('renders excavation page', async () => {

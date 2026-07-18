@@ -1,6 +1,6 @@
 import React from 'react';
 import {useAsync} from "react-async";
-import {useParams, useRouteMatch} from "react-router-dom";
+import {Link, useParams, useRouteMatch} from "react-router-dom";
 import * as Index from "./Index";
 
 const current = "/~Solferino/broadcasts/stage/:stage";
@@ -104,7 +104,7 @@ function renderItems(data: unknown, props: SolferinoProps, stage: string) {
           <li className="place" title={v.place.join(' ')}>{v.place[v.place.length - 1]}</li>
           <li className="name" title={v.name.join(', ')}>{v.name[0]}</li>
           <li className="description">{v.description}</li>
-          <li className="log">(準備中)</li>
+          <li className="log">{renderLog(n)}</li>
         </ul>
       </li>
     )
@@ -116,6 +116,24 @@ async function loadData() {
   const numbers = require("../../data/broadcasts-numbers.json");
   const stages = require("../../data/broadcasts-stages.json");
   return {numbers: numbers, stages: stages};
+}
+
+function renderLog(n: string) {
+  const records = require("../../data/broadcasts-records.json").records as BroadcastsRecords;
+  const record = records[n];
+  if (record == null) return "(準備中)";
+  return (
+    <>
+      {record.threads.map((t, i) => (
+        <React.Fragment key={t.key}>
+          {i > 0 ? " " : null}
+          <Link to={"/~Solferino/broadcasts/log/" + t.key}>{t.label}</Link>
+        </React.Fragment>
+      ))}
+      {record.video != null ? <> <a href={record.video}>動画 (YouTube)</a></> : null}
+      {record.videoNote != null ? <> 動画 ({record.videoNote})</> : null}
+    </>
+  );
 }
 
 function getSeriesNumber(numbers: BroadcastsNumbers, series: string, number: string) {

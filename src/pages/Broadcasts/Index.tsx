@@ -4,6 +4,7 @@ import {Link, Route, Switch, useRouteMatch} from "react-router-dom";
 import "../../styles/broadcasts.css"
 import * as Menu from "../Menu";
 import * as Index404 from "../Index404";
+import * as Log from "./Log";
 import * as SpotInfo from "./SpotInfo";
 import * as SpotInfoLog from "./SpotInfoLog";
 import * as Stage from "./Stage";
@@ -36,6 +37,9 @@ export function Render(props: SolferinoProps) {
         </Route>
         <Route exact path={"/~Solferino/broadcasts/stage/:stage"}>
           <Stage.Render {...props}/>
+        </Route>
+        <Route exact path={"/~Solferino/broadcasts/log/:key"}>
+          <Log.Render {...props}/>
         </Route>
         <Route exact path={"/~Solferino/broadcasts/spot-info"}>
           <SpotInfo.Render {...props}/>
