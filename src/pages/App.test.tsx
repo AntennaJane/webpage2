@@ -185,6 +185,13 @@ test('comment page breadcrumbs go through series guide', async () => {
   expect(guide.closest("a")).toHaveAttribute("href", "/~Solferino/broadcasts/series/list#S017");
 });
 
+test('serves stage thumbnails from same-origin archive', async () => {
+  const {findByAltText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
+  const img = await findByAltText("第95回 動画サムネイル");
+  expect(img).toHaveAttribute("src", "/broadcasts/thumb/number-95.png");
+});
+
 test('renders record video links with liveness', async () => {
   const {findAllByText} = render(
     <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
