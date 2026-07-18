@@ -68,6 +68,7 @@ function render(data: unknown, props: SolferinoProps, stage: string) {
         </li>
         {renderItems(data, props, stage)}
       </ol>
+      <address>AntennaJane 2020-03-28 作成 2020-04-04 更新</address>
     </div>
   );
 }

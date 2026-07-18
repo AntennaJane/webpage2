@@ -50,6 +50,7 @@ export function Render(props: SolferinoProps) {
           </React.Fragment>
         ))}
       </dl>
+      <address>AntennaJane 2026-07-18 作成</address>
     </div>
   );
 }

@@ -51,7 +51,10 @@ function RenderContents() {
 function render(data: BoardArchive) {
   return (
     <div>
-      <p>かつて運用していた掲示板の過去ログです。閲覧専用で、書き込みはできません。</p>
+      <p>
+        かつて運用していた掲示板の過去ログです。閲覧専用で、書き込みはできません。<br/>
+        claudeが個人情報を消しておいてくれたそうです。claudeにありがとうと言って。
+      </p>
       {data.boards.map((board) => (
         <div key={board.id}>
           <h2>{board.name}</h2>
@@ -66,6 +69,7 @@ function render(data: BoardArchive) {
           </ul>
         </div>
       ))}
+      <address>AntennaJane 2026-07-18 作成</address>
     </div>
   );
 }
