@@ -7,6 +7,7 @@ import * as Menu from "./Menu";
 import * as Notes from "./Notes";
 import * as Profile from "./Profile";
 import * as Broadcasts from "./Broadcasts/Index";
+import * as Writing from "./Writing/Index";
 
 function Index() {
   const [page, setPage] = React.useState<Page>({title: "未設定", path: "未設定"});
@@ -48,6 +49,9 @@ function render(data: unknown, page: Page, setPage: SetPage, title: string) {
         </Route>
         <Route path={"/~Solferino/profile"}>
           <Profile.Render {...argument}/>
+        </Route>
+        <Route path={"/~Solferino/writing"}>
+          <Writing.Render {...argument}/>
         </Route>
         <Route>
           <Index404.Render {...argument} page={Front.BuildPage()}/>
