@@ -77,6 +77,8 @@ const contentRoutes = [
   "/~Solferino/writing",
   "/~Solferino/writing/toho-mistake",
   "/~Solferino/writing/excavation",
+  "/~Solferino/spot-info",
+  "/~Solferino/spot-info/log",
   "/~Solferino/board",
   "/~Solferino/board/bbs18c/1266112524",
   "/~Solferino/board/mtbbs2/1232607975",
