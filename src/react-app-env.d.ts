@@ -66,7 +66,12 @@ interface BroadcastsRecord {
   }[],
   "video": string | null,
   "videoNote": string | null,
-  "guide": string | null
+  "guide": string | null,
+  "comments": boolean,
+  "videoParts": {
+    "n": number,
+    "url": string
+  }[]
 }
 
 interface BroadcastsRecords {

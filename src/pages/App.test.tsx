@@ -87,6 +87,8 @@ const contentRoutes = [
   "/~Solferino/board/mtbbs2/1232607975",
   "/~Solferino/broadcasts",
   "/~Solferino/broadcasts/series",
+  "/~Solferino/broadcasts/series/list",
+  "/~Solferino/broadcasts/comments/17",
   "/~Solferino/broadcasts/stage",
   "/~Solferino/broadcasts/stage/1",
   "/~Solferino/broadcasts/log/1265953806",
@@ -153,10 +155,10 @@ test('links broadcast logs from stage record column', async () => {
   expect((await findStage13("(準備中)")).length).toBeGreaterThan(0);
 });
 
-test('renders series guide with stage links', async () => {
+test('renders series list with stage links', async () => {
   const {findByText, findAllByText} = render(
-    <MemoryRouter initialEntries={["/~Solferino/broadcasts/series"]}><Index/></MemoryRouter>);
-  expect((await findByText("シリーズガイド", {selector: "h1"}))).toBeInTheDocument();
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/series/list"]}><Index/></MemoryRouter>);
+  expect((await findByText("シリーズ一覧", {selector: "h1"}))).toBeInTheDocument();
   expect(await findByText("極限の中で月夜に響くノクターン Rebirth実況")).toBeInTheDocument();
   const parts = await findAllByText("(1)", {selector: "a"});
   expect(parts.length).toBeGreaterThan(0);
@@ -166,16 +168,33 @@ test('links series guide from stage record column', async () => {
   const {findAllByText} = render(
     <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
   const guides = await findAllByText("シリーズガイド", {selector: "a"});
-  expect(guides[0]).toHaveAttribute("href", "/~Solferino/broadcasts/series#S018");
+  expect(guides[0]).toHaveAttribute("href", "/~Solferino/broadcasts/series/list#S018");
+});
+
+test('links video comments from stage record column', async () => {
+  const {findAllByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
+  const comments = await findAllByText("動画コメント", {selector: "a"});
+  expect(comments[0]).toHaveAttribute("href", "/~Solferino/broadcasts/comments/18#number-95");
+});
+
+test('comment page breadcrumbs go through series guide', async () => {
+  const {findByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/comments/17"]}><Index/></MemoryRouter>);
+  const guide = await findByText("シリーズ一覧", {selector: ".Breadcrumbs a"});
+  expect(guide.closest("a")).toHaveAttribute("href", "/~Solferino/broadcasts/series/list#S017");
 });
 
 test('renders record video links with liveness', async () => {
   const {findAllByText} = render(
     <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
-  const videos = await findAllByText("動画 (YouTube)", {exact: true, selector: "a"});
-  expect(videos[0]).toHaveAttribute("href", "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C");
-  // 現95 (旧93) の動画は削除済みプレイリスト
-  expect(await findAllByText("動画 (YouTube・削除済み)", {exact: false})).toBeTruthy();
+  // パート別リンク: 先頭は「動画 (YouTube)(1)」、以降 (2)(3)...
+  const videos = await findAllByText("動画 (YouTube)(1)", {exact: true, selector: "a"});
+  expect(videos[0].getAttribute("href")).toMatch(/^https:\/\/www\.youtube\.com\/watch\?v=[\w-]{11}(&list=PL[0-9A-F]+)?$/);
+  // rar 配布のみだった回は配布終了表記 (4期に実在)
+  const {findAllByText: findStage4} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/4"]}><Index/></MemoryRouter>);
+  expect((await findStage4("動画 (配布終了)", {exact: false})).length).toBeGreaterThan(0);
 });
 
 test('broadcast log breadcrumbs include stage context', async () => {

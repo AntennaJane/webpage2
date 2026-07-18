@@ -127,6 +127,11 @@ async function loadData() {
   return {numbers: numbers, stages: stages};
 }
 
+function seriesOf(n: string): string {
+  const numbers = require("../../data/broadcasts-numbers.json") as BroadcastsNumbers;
+  return numbers[n]?.series ?? "";
+}
+
 function renderLog(n: string) {
   const records = require("../../data/broadcasts-records.json").records as BroadcastsRecords;
   const record = records[n];
@@ -134,13 +139,21 @@ function renderLog(n: string) {
   return (
     <>
       {record.guide != null ?
-        <><Link to={"/~Solferino/broadcasts/series#S" + record.guide.padStart(3, "0")}>シリーズガイド</Link> </> : null}
+        <><Link to={"/~Solferino/broadcasts/series/list#S" + record.guide.padStart(3, "0")}>シリーズガイド</Link> </> : null}
+      {record.comments ?
+        <><Link to={"/~Solferino/broadcasts/comments/" + seriesOf(n) + "#number-" + n}>動画コメント</Link> </> : null}
       {record.threads.map((t, i) => (
         <React.Fragment key={t.key}>
           {i > 0 ? " " : null}
           <Link to={"/~Solferino/broadcasts/log/" + t.key}>{t.label}</Link>
         </React.Fragment>
       ))}
+      {record.videoParts.length > 0 ?
+        record.videoParts.map((p, i) => (
+          <React.Fragment key={p.n}>
+            {" "}<a href={p.url}>{(i === 0 ? "動画 (YouTube)" : "") + "(" + p.n + ")"}</a>
+          </React.Fragment>
+        )) : null}
       {record.video != null ? <> <a href={record.video}>動画 (YouTube)</a></> : null}
       {record.videoNote != null ? <> 動画 ({record.videoNote})</> : null}
     </>

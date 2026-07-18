@@ -1,6 +1,7 @@
 {
  "records": {
   "1": {
+   "comments": true,
    "guide": "1",
    "threads": [
     {
@@ -9,9 +10,20 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=8ZyyqstIgJA&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=uEGVyLH63ZA&list=PL8672A921B006931C"
+    }
+   ]
   },
   "10": {
+   "comments": true,
    "guide": "5",
    "threads": [
     {
@@ -27,10 +39,53 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLA91163A813F95CBA",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=_PzDjLfRfr4&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=msQ_3aglIlU&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=qqiUwisghvI&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=yVOPQeJfUHc&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=Ji1_I4cpj4U&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=4aOUZMzgAWI&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=xesCjjL8lDc&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=uzP3A6gckdc&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=ct2nFJkx2ig&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=C8TEZ4jti3s&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "100": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -62,10 +117,57 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=NeC5sq6I56w&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=NZd4ohEdU50&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=iX1yNSibCQ4&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=1CnDSqgLJkM&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=er9x7YDfy3o&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=HQJ-ocMOv3s&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=TdCb1ptqH3U&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=zwrGRDs8FeU&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=dJ2_6go062Y&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=cGLmZUzAdUo&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=TAzG7SMEGYY&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "101": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -97,10 +199,61 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=xqy4TaMpAlk&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=DkYeNt6kSvQ&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=_8JTh5dRClU&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=Tzo_L3eAmW8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=QDsV2tq1We8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=1vXIp3x__Qg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=lJTRoSEcwO4&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=8Ea9s9_QH58&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=RsgsbeJL7GA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=rD70v_NcTUg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=X3mfOEg1Jcc&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 12,
+     "url": "https://www.youtube.com/watch?v=Ub8C40x5nUk&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "102": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -124,10 +277,45 @@
      "label": "避難所"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=3TQjjWNs1RA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=lHZwsV60ILU&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=LBS-COMBWP0&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=f_S-KmEpsOk&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=sEP4upHgG7E&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=fDHlu1tcqdg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=0-CFa7pt02g&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=JLB9njIfeso&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "103": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -152,9 +340,11 @@
     }
    ],
    "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "104": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -179,9 +369,11 @@
     }
    ],
    "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "105": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -206,9 +398,11 @@
     }
    ],
    "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "106": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -237,9 +431,11 @@
     }
    ],
    "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "107": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -264,9 +460,11 @@
     }
    ],
    "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "108": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -291,9 +489,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "109": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -326,9 +526,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "11": {
+   "comments": true,
    "guide": "5",
    "threads": [
     {
@@ -340,10 +542,45 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLA91163A813F95CBA",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=aIbrTb6Io8o&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=ZX4iu9_Ol_A&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=NJTQ4wDwgp0&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=xt6b0vtJCvY&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=CyHwAZ8GwYI&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=uq8eqhPII2s&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=HINFmgQsjKI&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=ggeD2HV7Z04&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "110": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -372,9 +609,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "111": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -395,9 +634,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "112": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -422,9 +663,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "113": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -445,9 +688,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "114": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -472,9 +717,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "115": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -503,9 +750,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "116": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -534,9 +783,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "117": {
+   "comments": false,
    "guide": "20",
    "threads": [
     {
@@ -561,9 +812,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "118": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -580,9 +833,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "119": {
+   "comments": false,
    "guide": "20",
    "threads": [
     {
@@ -603,9 +858,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "12": {
+   "comments": true,
    "guide": "5",
    "threads": [
     {
@@ -621,10 +878,45 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLA91163A813F95CBA",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=SrrKnI2GYuA&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=iQgNITloshg&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=yMdogm5ti24&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=8W4HZs0xzqE&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=YZjMVHRWFjI&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=MMDyfNDC6dM&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=Pm6bF4RVW2g&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=o4IxyY7t7iY&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "120": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -649,9 +941,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "121": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -671,10 +965,41 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=IojV24IWFhc&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=XgLAQ109Rco&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=yfhgGL1KmOU&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=OxoSB7Rgdbg&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=zsMiy-3iskE&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=sgpMoNCTFRw&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=3AYZHgXkgCI&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "122": {
+   "comments": false,
    "guide": "19",
    "threads": [
     {
@@ -699,9 +1024,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "123": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -729,10 +1056,41 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=go2ZX520Tw4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=DICTNVVJIic&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=cGMbQ2L15nQ&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=4sAdgGhG07o&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=GXUlKCU3RBM&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=DH030wHe2r4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=E_pEFegmHk8&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "124": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -752,10 +1110,41 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=s0u5Ce3SFt4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=JSAIgJaBdGw&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=MHI4F-rXfvY&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=EVmx6NddPMI&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=igkefpC_Bl8&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=5C72YUCvoM4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=40C3mSiDg4Q&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "125": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -775,10 +1164,41 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=wwvwrvVV_lw&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=I_6YMnj2A8g&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=PIuN19fs8rk&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=hQfoltJMki8&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=59ITM8deBW4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=6_KrVJN6J9I&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=Gpx16RBZoBg&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "126": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -802,10 +1222,37 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=d5M_6Lkn1DU&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=UuY-22KQvZc&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=B9z_ErBsOH4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=gaURWDzbxTY&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=3RhOdNFEbN8&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=Rk6Oq5HK1tY&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "127": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -825,10 +1272,37 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=NsZDf_roaRk&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=rRk23nOH9mw&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=FtK6H3vN2cQ&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=1k_4ZCBr-lg&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=iIfSuvLMRz0&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=xww3frIPS2Y&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "128": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -852,10 +1326,41 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=XLviOm6s83M&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=9FBsGEuHtqw&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=7-_F-LVECFk&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=AQ1y9gtGupw&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=m57B44lWim0&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=EeHMZwb9k-o&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=PimuxTxW85I&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "129": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -871,10 +1376,41 @@
      "label": "避難所"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=cz5yxXGGz4s&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=VJueiyQcWyY&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=u6G9X1QSud4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=JGQO2lJgJa4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=fqqGbuKn1Rk&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=mObWV6_NL4Q&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=tCYlEekRSuE&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "13": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -883,9 +1419,40 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=ntV0jUsOJds&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=Xcg0F4zgnw8&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=XJFIDRRzbLA&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=Ow_rEOGpBHM&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=veWBXATV02I&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=8W9sYFDtpWs&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=MYJfEi-IGi0&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "130": {
+   "comments": true,
    "guide": "21",
    "threads": [
     {
@@ -909,10 +1476,45 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=ywkGyrZl-Ds&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=6N3YZgT9hww&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=9vvNlldM59s&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=OvbeUM7HGpM&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=tUFyvFtiAYc&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=EAdH1OGDJmE&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=4BVdsk14oc4&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=nLQBkjRbHAA&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "131": {
+   "comments": true,
    "guide": "22",
    "threads": [
     {
@@ -928,10 +1530,29 @@
      "label": "避難所"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=5osWQm2oMtY&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=eaFgGFjTbnc&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=8H6QkGFW6vI&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=lOTX8VFZZzM&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "132": {
+   "comments": true,
    "guide": "22",
    "threads": [
     {
@@ -951,10 +1572,33 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=J8CHFGQ6DGU&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=-EC7pnUiX1A&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=djZih0eQJZk&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=Bi88kcEBVr0&list=PL5D00F89D9165D850"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=x4qf3XxRwmE&list=PL5D00F89D9165D850"
+    }
+   ]
   },
   "133": {
+   "comments": false,
    "guide": "22",
    "threads": [
     {
@@ -971,9 +1615,11 @@
     }
    ],
    "video": "https://www.youtube.com/playlist?list=PL5D00F89D9165D850",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "14": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -982,9 +1628,32 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=iEKl22ei4nw&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=qgrOP65VpDA&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=62hVT4yj0E0&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=G4Ho_k2Gbyw&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=lYURkTPjeFM&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "15": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -997,9 +1666,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=U6yQGAg9hK4&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=yCF2bK6S_2w&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=If69TJOyqvE&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "16": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -1008,21 +1692,40 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=YX0AcZ0zhho&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=UZQgEiMN4-c&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=dQoCyxHKS6Y&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "17": {
+   "comments": false,
    "guide": "7",
    "threads": [],
    "video": null,
-   "videoNote": "Ustream・配信終了"
+   "videoNote": "Ustream・配信終了",
+   "videoParts": []
   },
   "18": {
+   "comments": false,
    "guide": "8",
    "threads": [],
    "video": null,
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "19": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -1031,9 +1734,32 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=eOCzNF5ZF18&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=zVIoJyftu8s&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=h7wssajjSFM&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=Hma3TnIDOJ8&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=rZ8GhKzabKY&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "2": {
+   "comments": true,
    "guide": "2",
    "threads": [
     {
@@ -1046,15 +1772,49 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=RlHqZvcKCRs&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=zaX0PxiR8qE&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=6DDcCQFVh9I&list=PL8672A921B006931C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=lEXsLoxqTNM&list=PL8672A921B006931C"
+    }
+   ]
   },
   "20": {
+   "comments": true,
    "guide": "9",
    "threads": [],
-   "video": "https://www.youtube.com/playlist?list=PL88C2C252FB6E13DF",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=Ql50ZSX8fGc&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=dVl-MXxpCi0&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=5tVYnxX1GhQ&list=PL88C2C252FB6E13DF"
+    }
+   ]
   },
   "21": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -1071,15 +1831,44 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=nr6UoDAwPKU&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=NHM_jOQlbx4&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=WNNd2rdOKfQ&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=B5VUzEPQyVE&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=aks8Hrr-NB4&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=bl_BbLCm7RA&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "22": {
+   "comments": false,
    "guide": "9",
    "threads": [],
    "video": null,
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "23": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -1092,15 +1881,69 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=6_tDEk-IXK4&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=mc3HyWx9RsQ&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=lDJhJ0sGW_k&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=EkMWvFBUOUM&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=xawYZxLDqmY&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=h8VpDFPM1BI&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=W1rKlgTVbcE&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "24": {
+   "comments": true,
    "guide": "9",
    "threads": [],
-   "video": "https://www.youtube.com/playlist?list=PL88C2C252FB6E13DF",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=3dDJhWLC0ik&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=nk0l56JJ8v0&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=Y2RgZkq1cAs&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=DbYjCL2Vasg&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=xQal_RZrUoc&list=PL88C2C252FB6E13DF"
+    }
+   ]
   },
   "25": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -1121,15 +1964,52 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=0CoAmkgzD1k&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=5wQxBUjbzas&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=yWAZ6MGlo9s&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=11TO_h6937k&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=33vzrK34_9w&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=zZ-L-r_KdL8&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=39AwhLZgvDk&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=cCIJ5Y3SkfE&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "26": {
+   "comments": false,
    "guide": "9",
    "threads": [],
    "video": "https://www.youtube.com/playlist?list=PL88C2C252FB6E13DF",
-   "videoNote": null
+   "videoNote": null,
+   "videoParts": []
   },
   "27": {
+   "comments": true,
    "guide": "6",
    "threads": [
     {
@@ -1146,15 +2026,85 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=2rcK-HUbZ0E&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=-CiYXd2y8rs&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=OHMZ05teprg&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=9OTq55kVJKA&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=HigS6lTTBMw&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=kKCHC0Ue5Q0&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=mmZVpNTA5qs&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=zNCzPhdS264&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=EnYdVp6VOdc&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=C840tk7IGL4&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=6lUQdUbK6mo&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 12,
+     "url": "https://www.youtube.com/watch?v=kGI8zFYqsAs&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 13,
+     "url": "https://www.youtube.com/watch?v=mWgtPuUsbdU&list=PLA91163A813F95CBA"
+    },
+    {
+     "n": 14,
+     "url": "https://www.youtube.com/watch?v=D7H5WJDaeGQ&list=PLA91163A813F95CBA"
+    }
+   ]
   },
   "28": {
+   "comments": true,
    "guide": "9",
    "threads": [],
-   "video": "https://www.youtube.com/playlist?list=PL88C2C252FB6E13DF",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=0DoZ5ENoVD0&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=BnN29wDwg-g&list=PL88C2C252FB6E13DF"
+    }
+   ]
   },
   "29": {
+   "comments": true,
    "guide": "10",
    "threads": [
     {
@@ -1171,9 +2121,36 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=7RzHiHF74mo&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=2i3bUah2cQg&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=-Gqu-Mcg8Bk&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=dWuOosxnQ_k&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=x9ixEoC04Rk&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=6OezAHhCBnc&list=PL88C2C252FB6E13DF"
+    }
+   ]
   },
   "3": {
+   "comments": true,
    "guide": "3",
    "threads": [
     {
@@ -1182,9 +2159,28 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=-RNPFjBgnKk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=LLJMOsGAsmk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=GcwbFd8-PMc&list=PL8672A921B006931C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=J2KCGdGITqc&list=PL8672A921B006931C"
+    }
+   ]
   },
   "30": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1205,9 +2201,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "31": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1220,9 +2218,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "32": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1247,9 +2247,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "33": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1266,9 +2268,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "34": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1281,9 +2285,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "35": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1296,15 +2302,44 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "36": {
+   "comments": true,
    "guide": "12",
    "threads": [],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=RTn606tPKKY&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=RBVs1Qf8J4I&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=f5LVaS02LHU&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=gLiVWFTn_80&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=b5QXezprsNU&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=VVp_hWw6sGg&list=PL88C2C252FB6E13DF"
+    }
+   ]
   },
   "37": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1325,9 +2360,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "38": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1344,9 +2381,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "39": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1359,9 +2398,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "4": {
+   "comments": true,
    "guide": "4",
    "threads": [
     {
@@ -1378,9 +2419,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=HI8-8OnQvLs&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=ReejgVEVnVk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=6cFo_GQt538&list=PL8672A921B006931C"
+    }
+   ]
   },
   "40": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1397,9 +2453,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "41": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1420,9 +2478,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "42": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1439,9 +2499,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "43": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1462,9 +2524,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "44": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1485,9 +2549,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "45": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1496,9 +2562,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "46": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1511,9 +2579,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "47": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1538,9 +2608,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "49": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1557,9 +2629,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "5": {
+   "comments": true,
    "guide": "4",
    "threads": [
     {
@@ -1568,9 +2642,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=goeuHKrLtfc&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=IVi53-Zjv6c&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=63G4KIuMrzg&list=PL8672A921B006931C"
+    }
+   ]
   },
   "50": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1583,9 +2672,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "51": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1598,9 +2689,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "52": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1621,9 +2714,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "53": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1640,9 +2735,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "54": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1663,9 +2760,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "55": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1682,9 +2781,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "56": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1713,9 +2814,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "57": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1736,9 +2839,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "58": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1767,9 +2872,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "59": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1790,9 +2897,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "6": {
+   "comments": true,
    "guide": "4",
    "threads": [
     {
@@ -1809,9 +2918,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=1RX6kyLnxpo&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=Lj32QgDlB7s&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=Eu_1N5jcpKI&list=PL8672A921B006931C"
+    }
+   ]
   },
   "60": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1832,9 +2956,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "61": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1851,9 +2977,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "62": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1870,9 +2998,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "63": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1905,9 +3035,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "64": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1940,9 +3072,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "65": {
+   "comments": true,
    "guide": "11",
    "threads": [
     {
@@ -1963,9 +3097,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "66": {
+   "comments": true,
    "guide": "14",
    "threads": [
     {
@@ -1977,10 +3113,57 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL8672A921B006931C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=OAL7OVUV65s&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=AqRcMo2gezE&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=a-tkGZHgJ_k&list=PL8672A921B006931C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=yWGh5HB6rXA&list=PL8672A921B006931C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=KjYDl5wOlfE&list=PL8672A921B006931C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=15oQXPOo3g4&list=PL8672A921B006931C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=1T9hZQqglwM&list=PL8672A921B006931C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=wvSujNqWtQc&list=PL8672A921B006931C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=3w94hm5Rzi8&list=PL8672A921B006931C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=SLhSAGEDpFc&list=PL8672A921B006931C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=WRdYLw-eT-Y&list=PL8672A921B006931C"
+    }
+   ]
   },
   "67": {
+   "comments": true,
    "guide": "14",
    "threads": [
     {
@@ -2000,10 +3183,41 @@
      "label": "(4)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL8672A921B006931C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=vuwmmf61K-E&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=iwZiW-tXwNU&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=DGuN_M4p7cY&list=PL8672A921B006931C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=Xk8xQdWt1A8&list=PL8672A921B006931C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=FclqeFq0ACE&list=PL8672A921B006931C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=EdGCuthvKjk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=ldWvH5aSXeE&list=PL8672A921B006931C"
+    }
+   ]
   },
   "68": {
+   "comments": true,
    "guide": "14",
    "threads": [
     {
@@ -2031,10 +3245,69 @@
      "label": "避難所"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PL8672A921B006931C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=nqWjMTpz44M&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=1HLYVQc35D0&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=hLQMFKhNROk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=aXmeNX_79uY&list=PL8672A921B006931C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=P0aSZDohQSk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=xStOwEiDMJE&list=PL8672A921B006931C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=TEElVrF55bc&list=PL8672A921B006931C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=aca6lysKCo8&list=PL8672A921B006931C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=EGuJkebl2eI&list=PL8672A921B006931C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=HBR-jjN1abk&list=PL8672A921B006931C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=HcaLsL9UzFo&list=PL8672A921B006931C"
+    },
+    {
+     "n": 12,
+     "url": "https://www.youtube.com/watch?v=qfFZqmK1dJM&list=PL8672A921B006931C"
+    },
+    {
+     "n": 13,
+     "url": "https://www.youtube.com/watch?v=_oK0DCBu5ts&list=PL8672A921B006931C"
+    },
+    {
+     "n": 14,
+     "url": "https://www.youtube.com/watch?v=TVuvcAmvfIk&list=PL8672A921B006931C"
+    }
+   ]
   },
   "69": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2055,9 +3328,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "7": {
+   "comments": true,
    "guide": "4",
    "threads": [
     {
@@ -2070,9 +3345,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=MpBhxgzGIz4&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=iA5htnWCkYU&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=Vqs4NV-0szQ&list=PL8672A921B006931C"
+    }
+   ]
   },
   "70": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2101,9 +3391,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "71": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2132,9 +3424,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "72": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2163,9 +3457,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "73": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2194,9 +3490,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "74": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2221,9 +3519,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "75": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2252,9 +3552,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "76": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2283,9 +3585,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "77": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2306,9 +3610,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "78": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2333,9 +3639,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "79": {
+   "comments": false,
    "guide": "15",
    "threads": [
     {
@@ -2360,9 +3668,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "8": {
+   "comments": true,
    "guide": "4",
    "threads": [
     {
@@ -2379,9 +3689,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=W6wEUMc9L3Y&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=eFOGeom_0lE&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=leEerT2T6YQ&list=PL8672A921B006931C"
+    }
+   ]
   },
   "80": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2410,9 +3735,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "81": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2437,9 +3764,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "82": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2468,9 +3797,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "83": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2507,9 +3838,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "84": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2538,9 +3871,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "85": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2573,9 +3908,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "86": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2604,9 +3941,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "87": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2639,9 +3978,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "88": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2670,9 +4011,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "89": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2705,9 +4048,11 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "9": {
+   "comments": true,
    "guide": "4",
    "threads": [
     {
@@ -2716,9 +4061,24 @@
     }
    ],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=X9NV_Uv4VYI&list=PL8672A921B006931C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=hL_CvLoC_oA&list=PL8672A921B006931C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=XKo9K6M3bog&list=PL8672A921B006931C"
+    }
+   ]
   },
   "90": {
+   "comments": false,
    "guide": "16",
    "threads": [
     {
@@ -2751,15 +4111,24 @@
     }
    ],
    "video": null,
-   "videoNote": "配布終了"
+   "videoNote": "配布終了",
+   "videoParts": []
   },
   "91": {
+   "comments": true,
    "guide": "14",
    "threads": [],
-   "video": "https://www.youtube.com/playlist?list=PL8672A921B006931C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=FOVhU30yR84&list=PL8672A921B006931C"
+    }
+   ]
   },
   "92": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2779,10 +4148,57 @@
      "label": "(4)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=gE-JyLDWALs&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=4J_kAxnRJYs&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=SrV3Y9VZSdU&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=FoMCTsrqpMU&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=eI6GnW-3jsQ&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=rUSRLlIpCvM&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=GHTgGBgqddM&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=RhWK1Bv0Q48&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=kRuXuiBNcOg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=-IY9XIQsFSM&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=9TgCFcliCDo&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "93": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2806,10 +4222,49 @@
      "label": "(5)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=laFPWiYBx-c&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=B39Dcr_excA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=0cQgcLNxPgA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=EWNGaB9nVf8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=G-dkgTPrDFo&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=Rp2MVmlOLDg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=6mVIENrjj3Q&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=Zr7aqNU2M38&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=PIOWUXSuOlQ&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "94": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2825,16 +4280,82 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=hweCnWpbmn8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=33gr6bslprc&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=QhHgtpW4wpw&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=24BDz69J5Ps&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=45iSnHpCYG0&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=v4sE-u2A-Lg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=vpZnFSzDYhM&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=h1ID11p8FTA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=as_39xgLXiE&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=jVTBeTXBnLE&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=QDv5Hg_M6pE&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "95": {
+   "comments": true,
    "guide": "18",
    "threads": [],
    "video": null,
-   "videoNote": "YouTube・削除済み"
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=E64gVmLCPhI&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=R7wTM7AoN2w&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=vKZJ_CdtIlU&list=PL88C2C252FB6E13DF"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=9ORWeE0NBU0&list=PL88C2C252FB6E13DF"
+    }
+   ]
   },
   "96": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2850,10 +4371,61 @@
      "label": "避難所"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=5RIjzFUxksg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=FhfwKfWqAOo&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=lwQFowiLuM0&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=TTbJ91Y4DSg&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=GZUcVfh8znU&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=2SIeweiZ6Ho&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=PD_gFEvnt00&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=g-oF0St4z2k&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=JB8d4meyVwk&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=mgdxi486gTs&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=xH-NWHXhfgo&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 12,
+     "url": "https://www.youtube.com/watch?v=4-Isu0wRWe8&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "97": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2869,10 +4441,53 @@
      "label": "避難所"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=stf7XqEaQgw&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=qnUlTabfF7Y&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=KUZUHw0no_c&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=iYCLgYdRdWw&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=PTwfSrp5btA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=dcGA5ZUQ-9k&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=a9oAzFhckqA&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=OF1ma8fPTvI&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=Mk0JyNK9y8o&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=hzNOzxJraTs&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "98": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2888,10 +4503,33 @@
      "label": "(3)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=SbN3wxMdwd8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=cw6R97D9BEY&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=v9ETuyXJBFk&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=Q_huFdyueHk&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=TncfK-cmYzc&list=PLB721FC41AA8C314C"
+    }
+   ]
   },
   "99": {
+   "comments": true,
    "guide": "17",
    "threads": [
     {
@@ -2915,8 +4553,54 @@
      "label": "(2)"
     }
    ],
-   "video": "https://www.youtube.com/playlist?list=PLB721FC41AA8C314C",
-   "videoNote": null
+   "video": null,
+   "videoNote": null,
+   "videoParts": [
+    {
+     "n": 1,
+     "url": "https://www.youtube.com/watch?v=WsdoNDzJaGs&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 2,
+     "url": "https://www.youtube.com/watch?v=T2SG7gUYsRI&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 3,
+     "url": "https://www.youtube.com/watch?v=m-zVG6rWwOI&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 4,
+     "url": "https://www.youtube.com/watch?v=riFO4jPOiuY&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 5,
+     "url": "https://www.youtube.com/watch?v=BcliFv0VNK8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 6,
+     "url": "https://www.youtube.com/watch?v=Urg4txWD7-I&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 7,
+     "url": "https://www.youtube.com/watch?v=eHsO7TMLWUE&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 8,
+     "url": "https://www.youtube.com/watch?v=3ua8l-lNlgw&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 9,
+     "url": "https://www.youtube.com/watch?v=ewxz9LBlvf8&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 10,
+     "url": "https://www.youtube.com/watch?v=oy5bmBf28Mc&list=PLB721FC41AA8C314C"
+    },
+    {
+     "n": 11,
+     "url": "https://www.youtube.com/watch?v=g2Slh1-yPlc&list=PLB721FC41AA8C314C"
+    }
+   ]
   }
  }
 }
