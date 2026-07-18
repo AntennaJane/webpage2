@@ -86,6 +86,7 @@ const contentRoutes = [
   "/~Solferino/board/bbs18c/1266112524",
   "/~Solferino/board/mtbbs2/1232607975",
   "/~Solferino/broadcasts",
+  "/~Solferino/broadcasts/series",
   "/~Solferino/broadcasts/stage",
   "/~Solferino/broadcasts/stage/1",
   "/~Solferino/broadcasts/log/1265953806",
@@ -150,6 +151,22 @@ test('links broadcast logs from stage record column', async () => {
   const {findAllByText: findStage13} = render(
     <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/13"]}><Index/></MemoryRouter>);
   expect((await findStage13("(準備中)")).length).toBeGreaterThan(0);
+});
+
+test('renders series guide with stage links', async () => {
+  const {findByText, findAllByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/series"]}><Index/></MemoryRouter>);
+  expect((await findByText("シリーズガイド", {selector: "h1"}))).toBeInTheDocument();
+  expect(await findByText("極限の中で月夜に響くノクターン Rebirth実況")).toBeInTheDocument();
+  const parts = await findAllByText("(1)", {selector: "a"});
+  expect(parts.length).toBeGreaterThan(0);
+});
+
+test('links series guide from stage record column', async () => {
+  const {findAllByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/stage/10"]}><Index/></MemoryRouter>);
+  const guides = await findAllByText("シリーズガイド", {selector: "a"});
+  expect(guides[0]).toHaveAttribute("href", "/~Solferino/broadcasts/series#S018");
 });
 
 test('renders record video links with liveness', async () => {
