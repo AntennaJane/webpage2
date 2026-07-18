@@ -9,6 +9,7 @@ import * as Profile from "./Profile";
 import * as Broadcasts from "./Broadcasts/Index";
 import * as Writing from "./Writing/Index";
 import * as Board from "./Board/Index";
+import * as Connections from "./Connections";
 import * as History from "./History";
 import * as Restrictions from "./Restrictions";
 
@@ -64,6 +65,9 @@ function render(data: unknown, page: Page, setPage: SetPage, title: string) {
         </Route>
         <Route path={"/~Solferino/restrictions"}>
           <Restrictions.Render {...argument}/>
+        </Route>
+        <Route path={"/~Solferino/connections"}>
+          <Connections.Render {...argument}/>
         </Route>
         <Route>
           <Index404.Render {...argument} page={Front.BuildPage()}/>
