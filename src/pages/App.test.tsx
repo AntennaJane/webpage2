@@ -79,6 +79,7 @@ const contentRoutes = [
   "/~Solferino/writing/excavation",
   "/~Solferino/history",
   "/~Solferino/restrictions",
+  "/~Solferino/connections",
   "/~Solferino/broadcasts/spot-info",
   "/~Solferino/broadcasts/spot-info/log",
   "/~Solferino/board",

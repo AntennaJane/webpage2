@@ -1,0 +1,15 @@
+name = "webpage2-access-stats"
+main = "src/index.js"
+compatibility_date = "2026-07-01"
+
+# magenta.link 全体を通す (robots.txt へのクローラ来訪も観測するため)。
+# Pages のカスタムドメイン配信は Worker からの fetch(request) がそのまま届く。
+routes = [
+  { pattern = "magenta.link/*", zone_name = "magenta.link" }
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "webpage2-access"
+# `wrangler d1 create webpage2-access` の出力の database_id をここに転記する
+database_id = "PLACEHOLDER_DATABASE_ID"
