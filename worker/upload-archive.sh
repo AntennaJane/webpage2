@@ -14,7 +14,10 @@ touch "$DONE"
 total=$(find "$SRC" -type f | wc -l)
 find "$SRC" -type f | sort | while read -r f; do
   key=${f#"$SRC"/}
-  grep -qxF "$key" "$DONE" && continue
+  hash=$(sha256sum "$f" | cut -d' ' -f1)
+  # 完了記録は「キー<TAB>ハッシュ」。内容が変わったファイルは再アップロードする
+  # (旧形式のキーのみの行は既存アップロード済みとして扱う)
+  if grep -qxF "$key	$hash" "$DONE" || grep -qxF "$key" "$DONE"; then continue; fi
   case "$key" in
     *.json) ct="application/json" ;;
     *.png)  ct="image/png" ;;
@@ -31,13 +34,13 @@ find "$SRC" -type f | sort | while read -r f; do
     sleep 3
   done
   if [ "$ok" = 1 ]; then
-    echo "$key" >> "$DONE"
+    echo "$key	$hash" >> "$DONE"
   else
     echo "断念: $key (再実行で続きから再開できます)" >&2
   fi
 done
 
-done_n=$(wc -l < "$DONE")
+done_n=$(cut -f1 "$DONE" | sort -u | wc -l)
 echo "完了 $done_n / $total"
 if [ "$done_n" -ne "$total" ]; then
   echo "未完了分があります。同じコマンドを再実行してください。" >&2

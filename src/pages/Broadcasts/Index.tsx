@@ -4,8 +4,10 @@ import {Link, Route, Switch, useRouteMatch} from "react-router-dom";
 import "../../styles/broadcasts.css"
 import * as Menu from "../Menu";
 import * as Index404 from "../Index404";
+import * as Comments from "./Comments";
 import * as Log from "./Log";
 import * as Series from "./Series";
+import * as SeriesList from "./SeriesList";
 import * as SpotInfo from "./SpotInfo";
 import * as SpotInfoLog from "./SpotInfoLog";
 import * as Stage from "./Stage";
@@ -42,6 +44,12 @@ export function Render(props: SolferinoProps) {
         <Route exact path={"/~Solferino/broadcasts/series"}>
           <Series.Render {...props}/>
         </Route>
+        <Route exact path={"/~Solferino/broadcasts/series/list"}>
+          <SeriesList.Render {...props}/>
+        </Route>
+        <Route exact path={"/~Solferino/broadcasts/comments/:series"}>
+          <Comments.Render {...props}/>
+        </Route>
         <Route exact path={"/~Solferino/broadcasts/log/:key"}>
           <Log.Render {...props}/>
         </Route>
@@ -65,13 +73,14 @@ function RenderContents() {
   if (error) return <div>読込に失敗しました</div>;
   if (data) return (
     <div>
+      <p>
+        <Link to={"/~Solferino/broadcasts/series"}>シリーズガイド</Link>　はじめての方はこちらへ<br/>
+        <Link to={"/~Solferino/broadcasts/series/list"}>シリーズ一覧</Link>　各シリーズの詳細・所属回・コメント集
+      </p>
       <h2>実況期 一覧</h2>
       {Stages.render(data)}
       <h2>その他</h2>
-      <p>
-        <Link to={"/~Solferino/broadcasts/series"}>シリーズガイド</Link>　はじめての方はこちらへ<br/>
-        <Link to={"/~Solferino/broadcasts/spot-info"}>旧最新情報</Link>
-      </p>
+      <p><Link to={"/~Solferino/broadcasts/spot-info"}>旧最新情報</Link></p>
       <address>AntennaJane 2020-03-28 作成 2026-07-18 更新</address>
     </div>
   );

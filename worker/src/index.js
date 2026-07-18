@@ -90,6 +90,7 @@ export default {
     // アーカイブ (スレログ・旧サムネイル等の大容量静的データ) は R2 から配信する
     const archiveTypes = [
       ["/broadcasts/logs/", ".json", "application/json; charset=utf-8"],
+      ["/broadcasts/comments/", ".json", "application/json; charset=utf-8"],
       ["/broadcasts/thumb/", ".png", "image/png"],
     ];
     for (const [prefix, ext, contentType] of archiveTypes) {
