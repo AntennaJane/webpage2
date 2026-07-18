@@ -46,6 +46,27 @@ test('renders toho-mistake page', async () => {
   expect(image).toHaveAttribute("href", "/writing/toho_mistake/Kaeiduka.png");
 });
 
+test('links board from menu', async () => {
+  const {findByText} = render(<MemoryRouter initialEntries={["/~Solferino/menu"]}><Index/></MemoryRouter>);
+  const link = (await findByText("掲示板等")).closest("a");
+  expect(link).toHaveAttribute("href", "/~Solferino/board");
+});
+
+test('renders board index page', async () => {
+  const {findByText, findAllByText} = render(<MemoryRouter initialEntries={["/~Solferino/board"]}><Index/></MemoryRouter>);
+  expect((await findByText("掲示板等", {selector: "h1"}))).toBeInTheDocument();
+  const threads = await findAllByText("実況総合");
+  expect(threads.length).toBe(2);
+  expect(threads[0].closest("a")).toHaveAttribute("href", "/~Solferino/board/bbs18c/1266112580");
+});
+
+test('renders board thread page', async () => {
+  const {findByText} = render(
+    <MemoryRouter initialEntries={["/~Solferino/board/bbs18c/1266112580"]}><Index/></MemoryRouter>);
+  expect((await findByText("実況総合", {selector: "h1"}))).toBeInTheDocument();
+  expect(await findByText("実況中はこのスレもチェックしてるよ")).toBeInTheDocument();
+});
+
 test('renders excavation page', async () => {
   const {findByText} = render(<MemoryRouter initialEntries={["/~Solferino/writing/excavation"]}><Index/></MemoryRouter>);
   expect((await findByText("Webリソース発掘法", {selector: "h1"}))).toBeInTheDocument();

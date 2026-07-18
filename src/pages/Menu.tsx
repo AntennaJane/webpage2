@@ -34,7 +34,7 @@ export function Render(props: SolferinoProps) {
             <dd><span className="AA">(∩ﾟдﾟ)</span></dd>
             <dt><Link to={"/~Solferino/writing"}>雑記廃物</Link></dt>
             <dd><span className="AA">φ（．．） (´ー`)ノ⌒◇</span></dd>
-            <dt>掲示板等</dt>
+            <dt><Link to={"/~Solferino/board"}>掲示板等</Link></dt>
             <dd><span className="AA">（・∀・）人（・∀・）</span></dd>
             <dt>接続状況</dt>
             <dd><span className="AA">|Дﾟ)</span></dd>
