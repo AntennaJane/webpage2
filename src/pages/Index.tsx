@@ -10,6 +10,7 @@ import * as Broadcasts from "./Broadcasts/Index";
 import * as Writing from "./Writing/Index";
 import * as Board from "./Board/Index";
 import * as History from "./History";
+import * as Restrictions from "./Restrictions";
 
 function Index() {
   const [page, setPage] = React.useState<Page>({title: "未設定", path: "未設定"});
@@ -60,6 +61,9 @@ function render(data: unknown, page: Page, setPage: SetPage, title: string) {
         </Route>
         <Route path={"/~Solferino/history"}>
           <History.Render {...argument}/>
+        </Route>
+        <Route path={"/~Solferino/restrictions"}>
+          <Restrictions.Render {...argument}/>
         </Route>
         <Route>
           <Index404.Render {...argument} page={Front.BuildPage()}/>
