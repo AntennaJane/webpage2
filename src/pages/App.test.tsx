@@ -77,8 +77,9 @@ const contentRoutes = [
   "/~Solferino/writing",
   "/~Solferino/writing/toho-mistake",
   "/~Solferino/writing/excavation",
-  "/~Solferino/spot-info",
-  "/~Solferino/spot-info/log",
+  "/~Solferino/history",
+  "/~Solferino/broadcasts/spot-info",
+  "/~Solferino/broadcasts/spot-info/log",
   "/~Solferino/board",
   "/~Solferino/board/bbs18c/1266112524",
   "/~Solferino/board/mtbbs2/1232607975",
@@ -129,12 +130,12 @@ test('content routes cover every registered page path', () => {
 
 test('restores parent title when returning via breadcrumbs', async () => {
   const {findByText} = render(
-    <MemoryRouter initialEntries={["/~Solferino/spot-info"]}><Index/></MemoryRouter>);
-  expect((await findByText("最新情報", {selector: "h1"}))).toBeInTheDocument();
+    <MemoryRouter initialEntries={["/~Solferino/broadcasts/spot-info"]}><Index/></MemoryRouter>);
+  expect((await findByText("旧最新情報", {selector: "h1"}))).toBeInTheDocument();
   fireEvent.click(await findByText("旧発言テーブルログ", {selector: "a"}));
   expect((await findByText("旧発言テーブルログ", {selector: "h1"}))).toBeInTheDocument();
-  fireEvent.click(await findByText("最新情報", {selector: ".Breadcrumbs a"}));
-  expect((await findByText("最新情報", {selector: "h1"}))).toBeInTheDocument();
+  fireEvent.click(await findByText("旧最新情報", {selector: ".Breadcrumbs a"}));
+  expect((await findByText("旧最新情報", {selector: "h1"}))).toBeInTheDocument();
 });
 
 test('renders excavation page', async () => {

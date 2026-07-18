@@ -1,9 +1,11 @@
 import React from 'react';
 import {useAsync} from "react-async";
-import {Route, Switch, useRouteMatch} from "react-router-dom";
+import {Link, Route, Switch, useRouteMatch} from "react-router-dom";
 import "../../styles/broadcasts.css"
 import * as Menu from "../Menu";
 import * as Index404 from "../Index404";
+import * as SpotInfo from "./SpotInfo";
+import * as SpotInfoLog from "./SpotInfoLog";
 import * as Stage from "./Stage";
 import * as Stages from "./Stages";
 
@@ -35,6 +37,12 @@ export function Render(props: SolferinoProps) {
         <Route exact path={"/~Solferino/broadcasts/stage/:stage"}>
           <Stage.Render {...props}/>
         </Route>
+        <Route exact path={"/~Solferino/broadcasts/spot-info"}>
+          <SpotInfo.Render {...props}/>
+        </Route>
+        <Route exact path={"/~Solferino/broadcasts/spot-info/log"}>
+          <SpotInfoLog.Render {...props}/>
+        </Route>
         <Route>
           <Index404.Render {...props} page={BuildPage()}/>
         </Route>
@@ -51,7 +59,9 @@ function RenderContents() {
     <div>
       <h2>実況期 一覧</h2>
       {Stages.render(data)}
-      <address>AntennaJane 2020-03-28 作成 2020-04-04 更新</address>
+      <h2>その他</h2>
+      <p><Link to={"/~Solferino/broadcasts/spot-info"}>旧最新情報</Link></p>
+      <address>AntennaJane 2020-03-28 作成 2026-07-18 更新</address>
     </div>
   );
   return null;

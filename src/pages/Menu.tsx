@@ -28,7 +28,7 @@ export function Render(props: SolferinoProps) {
           <dl className="dlTable">
             <dt><Link to={"/~Solferino/profile"}>自己紹介</Link></dt>
             <dd><span className="AA">σ(ﾟ∀ﾟ)</span></dd>
-            <dt><Link to={"/~Solferino/spot-info"}>最新情報</Link></dt>
+            <dt><Link to={"/~Solferino/history"}>更新履歴</Link></dt>
             <dd><span className="AA">（･∀･)つ⑩</span></dd>
             <dt><Link to={"/~Solferino/broadcasts"}>実況履歴</Link></dt>
             <dd><span className="AA">(∩ﾟдﾟ)</span></dd>
@@ -44,7 +44,6 @@ export function Render(props: SolferinoProps) {
             <dd><span className="AA">(((( ；ﾟДﾟ)))</span></dd>
           </dl>
         </li>
-        <li>RSS（実況更新など通知）</li>
         <li>
           <ul>
             <li><a href="http://www.youtube.com/AntennaJane">実況YouTube支部</a></li>
@@ -67,7 +66,7 @@ export function Render(props: SolferinoProps) {
           </ul>
         </li>
       </ul>
-      <address>AntennaJane 2005-01-06 作成 2023-03-01 更新</address>
+      <address>AntennaJane 2005-01-06 作成 2026-07-18 更新</address>
     </div>
   );
 }
