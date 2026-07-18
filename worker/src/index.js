@@ -56,12 +56,31 @@ async function record(env, agent) {
   ).bind(day, agent, now).run();
 }
 
+// ボット以外 (内訳を取らない集計カテゴリ)
+const NONBOT = new Set(["人間などその他"]);
+
 async function stats(env) {
-  const {results} = await env.DB.prepare(
+  const agents = (await env.DB.prepare(
     "SELECT agent, SUM(count) AS total, MAX(last) AS last, MIN(day) AS since " +
     "FROM hits GROUP BY agent ORDER BY total DESC"
-  ).all();
-  return results;
+  ).all()).results;
+  const months = (await env.DB.prepare(
+    "SELECT substr(day, 1, 7) AS month, SUM(count) AS total " +
+    "FROM hits GROUP BY month ORDER BY month"
+  ).all()).results;
+  const days = (await env.DB.prepare(
+    "SELECT day, SUM(count) AS total FROM hits GROUP BY day ORDER BY day DESC LIMIT 31"
+  ).all()).results.reverse();
+  const range = (await env.DB.prepare(
+    "SELECT MIN(day) AS since, MAX(day) AS until FROM hits"
+  ).all()).results[0] || {since: null, until: null};
+
+  const bots = agents.filter((a) => !NONBOT.has(a.agent));
+  const other = agents.filter((a) => NONBOT.has(a.agent))
+    .reduce((acc, a) => ({total: acc.total + a.total, last: acc.last > a.last ? acc.last : a.last}),
+      {total: 0, last: ""});
+  // agents は旧ページ互換のため残す
+  return {since: range.since, until: range.until, months, days, bots, other, agents};
 }
 
 export default {
@@ -70,7 +89,7 @@ export default {
 
     if (url.pathname === "/~Solferino/api/access-stats") {
       try {
-        const body = JSON.stringify({agents: await stats(env)});
+        const body = JSON.stringify(await stats(env));
         return new Response(body, {
           headers: {
             "content-type": "application/json; charset=utf-8",

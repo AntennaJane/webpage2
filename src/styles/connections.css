@@ -1,0 +1,26 @@
+.Connections table.stats {
+    border-collapse: collapse;
+    margin: 0.5em 0 1em;
+}
+
+.Connections table.stats th,
+.Connections table.stats td {
+    border: solid 1px #363;
+    padding: 0.15em 0.6em;
+    text-align: left;
+}
+
+.Connections table.stats td.number {
+    text-align: right;
+}
+
+.Connections table.stats .graph {
+    border: none;
+    min-width: 12em;
+    padding-left: 0.6em;
+}
+
+.Connections table.stats .bar {
+    background: #0a5;
+    height: 0.7em;
+}
