@@ -46,13 +46,27 @@ interface BoardArchive {
   "threads": BoardThread[]
 }
 
+interface BroadcastsSeriesEntry {
+  "name": string,
+  "place": string,
+  "summary": string,
+  "start": string,
+  "time": string,
+  "thumb": string
+}
+
+interface BroadcastsSeriesGuide {
+  [series: string]: BroadcastsSeriesEntry
+}
+
 interface BroadcastsRecord {
   "threads": {
     "key": string,
     "label": string
   }[],
   "video": string | null,
-  "videoNote": string | null
+  "videoNote": string | null,
+  "guide": string | null
 }
 
 interface BroadcastsRecords {

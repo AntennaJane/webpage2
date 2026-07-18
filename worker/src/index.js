@@ -87,8 +87,13 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
-    // アーカイブ (スレログ等の大容量静的データ) は R2 から配信する
-    if (url.pathname.startsWith("/broadcasts/logs/") && url.pathname.endsWith(".json")) {
+    // アーカイブ (スレログ・旧サムネイル等の大容量静的データ) は R2 から配信する
+    const archiveTypes = [
+      ["/broadcasts/logs/", ".json", "application/json; charset=utf-8"],
+      ["/broadcasts/thumb/", ".png", "image/png"],
+    ];
+    for (const [prefix, ext, contentType] of archiveTypes) {
+      if (!url.pathname.startsWith(prefix) || !url.pathname.endsWith(ext)) continue;
       try {
         const object = await env.ARCHIVE.get(url.pathname.slice(1));
         if (object == null) {
@@ -96,7 +101,7 @@ export default {
         }
         return new Response(object.body, {
           headers: {
-            "content-type": "application/json; charset=utf-8",
+            "content-type": contentType,
             "cache-control": "public, max-age=86400",
           },
         });

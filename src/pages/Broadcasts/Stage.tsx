@@ -1,6 +1,6 @@
 import React from 'react';
 import {useAsync} from "react-async";
-import {Link, useParams, useRouteMatch} from "react-router-dom";
+import {Link, useLocation, useParams, useRouteMatch} from "react-router-dom";
 import * as Index from "./Index";
 
 const current = "/~Solferino/broadcasts/stage/:stage";
@@ -24,6 +24,15 @@ export function Render(props: SolferinoProps) {
   }
 
   const {data, error, isPending} = useAsync(loadData);
+
+  // シリーズガイド等から #number-N 付きで遷移した際の自動スクロール (データ描画後)
+  const {hash} = useLocation();
+  React.useEffect(() => {
+    if (hash !== "" && data != null) {
+      document.getElementById(hash.slice(1))?.scrollIntoView();
+    }
+  }, [hash, data]);
+
   if (isPending) return <div>読込中...</div>;
   if (error) return <div>読込に失敗しました</div>;
   if (data) {
@@ -124,6 +133,8 @@ function renderLog(n: string) {
   if (record == null) return "(準備中)";
   return (
     <>
+      {record.guide != null ?
+        <><Link to={"/~Solferino/broadcasts/series#S" + record.guide.padStart(3, "0")}>シリーズガイド</Link> </> : null}
       {record.threads.map((t, i) => (
         <React.Fragment key={t.key}>
           {i > 0 ? " " : null}
