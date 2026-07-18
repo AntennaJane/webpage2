@@ -11,15 +11,14 @@ export function BuildPage(): Page {
 }
 
 export function Render(props: SolferinoProps) {
-  const [rendered, setRendered] = React.useState(false);
-
+  // 子ページから戻ってもタイトルを再設定できるよう、isExact のたびに setPage する
   const isExact = useRouteMatch(current)?.isExact;
+  const setPage = props.setPage;
   React.useEffect(() => {
-    if (isExact && !rendered) {
-      setRendered(true);
-      props.setPage(BuildPage());
+    if (isExact) {
+      setPage(BuildPage());
     }
-  }, [isExact, rendered, props]);
+  }, [isExact, setPage]);
 
   return (
     <div className="SpotInfo">
