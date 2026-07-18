@@ -46,6 +46,12 @@ interface BoardArchive {
   "threads": BoardThread[]
 }
 
+interface SiteUpdate {
+  "date": string,
+  "title": string,
+  "description": string
+}
+
 interface Page {
   parent?: Page
   path: string,
